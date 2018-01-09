@@ -1,0 +1,29 @@
+.top_section {
+  width: 100%;
+  position: relative;
+  height: rem(540px);
+  overflow: hidden;
+  &::before{
+    @include before_fig(100%,100%,#1c1c1c);
+    opacity: 0.4;
+    z-index: 1;
+  }
+  .parallax {
+    position: absolute;
+  }
+  .top_content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .top_title {
+      color: #ffffff;
+      text-transform: uppercase;
+      font: 700 rem(69px)/1.4 $proxima;
+      letter-spacing: rem(1.38px);
+    }
+  }
+}

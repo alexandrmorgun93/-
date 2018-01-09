@@ -1,0 +1,109 @@
+.main_footer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: rem(545px);
+  border-top: rem(35px) solid #f3f3f3;
+  &::before {
+    @include before_fig(100%, 100%, #191b1c);
+    z-index: 1;
+    opacity: 0.85;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+  }
+  .footer_container {
+    .footer_content {
+      position: relative;
+      width: 100%;
+      z-index: 2;
+      padding: rem(100px) rem(10px);
+      display: flex;
+      justify-content: space-between;
+      .footer_text {
+        position: relative;
+        max-width: rem(720px);
+        width: 100%;
+        overflow: hidden;
+        p {
+          color: #ffffff;
+          font: 400 rem(16px)/1.7 $lato;
+          letter-spacing: rem(0.32px);
+        }
+      }
+      nav {
+        position: relative;
+        ul {
+          display: flex;
+          flex-direction: column;
+          li {
+            position: relative;
+            margin-bottom: rem(20px);
+            a {
+              text-transform: uppercase;
+              font: 700 rem(20px) $proxima;
+              color: #ffffff;
+              transition: color .4s;
+              &:hover {
+                color: $yellow-color;
+              }
+            }
+          }
+        }
+      }
+      .contacts_footer {
+        position: relative;
+        .contacts {
+          display: flex;
+          flex-direction: column;
+          a {
+            color: #ffffff;
+            font: 400 rem(22px)/1.2 $proxima;
+            letter-spacing: rem(0.44px);
+            margin-bottom: rem(40px);
+            i {
+              margin-right: rem(25px);
+            }
+          }
+
+        }
+        .social_footer {
+          margin-top: rem(30px);
+          a {
+            width: rem(60px);
+            height: rem(60px);
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-image: $yellow-social;
+            margin-right: rem(13px);
+            &:last-child {
+              margin-right: 0;
+            }
+            i {
+              color: #333333;
+              font-size: rem(25px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.made {
+  width: 100%;
+  padding: rem(40px) rem(10px) rem(25px);
+  background-color: #1c1c1c;
+  p {
+    color: #f8f8f8;
+    font: 400 rem(16px) $proxima;
+    letter-spacing: rem(0.32px);
+  }
+}

@@ -1,0 +1,58 @@
+.advantages {
+  margin-top: rem(120px);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: rem(160px);
+  &::before {
+    @include before_fig(100%, 100%, #333333)
+  }
+  .parallax {
+    position: absolute;
+  }
+  h2 {
+    color: #ffffff;
+    margin-bottom: rem(150px);
+  }
+  .advantages_wrap {
+    max-width: rem(1480px);
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .advantages_elem {
+      position: relative;
+      max-width: rem(630px);
+      width: 100%;
+      height: rem(290px);
+      background-color: #fff;
+      padding: rem(60px) rem(50px) 0 rem(145px);
+      margin-bottom: rem(40px);
+      box-shadow: rem(-12px) rem(23px) rem(68px) rgba(0, 0, 0, 0.08);
+      h3 {
+        color: #1c1c1c;
+        text-transform: uppercase;
+        font: 700 rem(24px)/3 $proxima;
+        letter-spacing: rem(0.48px);
+      }
+      .advantages_circle {
+        position: absolute;
+        top: rem(50px);
+        left: rem(-86px);
+        width: rem(193px);
+        height: rem(193px);
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #cf941b 0%, #cf941b 1%, #dead50 16%, #f1cd66 30%, #ffee8a 46%, #ffffa4 57%, #eccf49 89%, #f3c557 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: rem(50px);
+        }
+      }
+    }
+
+  }
+}

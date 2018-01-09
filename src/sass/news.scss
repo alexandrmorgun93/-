@@ -1,0 +1,83 @@
+.news {
+  width: 100%;
+  position: relative;
+  .news_container {
+    display: flex;
+    flex-direction: column;
+    .new_elem {
+      margin-bottom: rem(55px);
+      width: 100%;
+      position: relative;
+      box-shadow: rem(-12px) rem(23px) rem(68px) rgba(0, 0, 0, 0.08);
+        &:last-child{
+          header {
+            background-image: $yellow-gradient;
+          }
+        }
+      header {
+        background-image: $brown-gradient;
+        height: rem(176px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          color: #ffffff;
+          text-transform: uppercase;
+          font: 700 rem(40px)/1.8 $proxima;
+          letter-spacing: rem(0.8px);
+        }
+      }
+      .news_content {
+        width: 100%;
+        padding: rem(45px) rem(100px);
+        background-color: #fff;
+        article {
+          margin-bottom: rem(35px);
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .left_news {
+            display: flex;
+            align-items: center;
+            .news_img {
+              width: rem(120px);
+              height: rem(120px);
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .news_text {
+              margin-left: rem(45px);
+              p {
+                color: #929292;
+                font: 400 rem(20px)/2 $proxima;
+              }
+              h4 {
+                color: #1c1c1c;
+                font: 700 rem(20px) $proxima;
+                max-width: rem(360px);
+                width: 100%;
+              }
+            }
+          }
+          .btn_main {
+            color: #333333;
+            font: 700 rem(16px) $lato;
+            letter-spacing: rem(0.32px);
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .btn {
+      color: #333333;
+      font: 700 rem(16px) $lato;
+      letter-spacing: rem(0.32px);
+      align-self: center;
+      margin-bottom: rem(100px);
+    }
+  }
+}
