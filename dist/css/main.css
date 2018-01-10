@@ -93,7 +93,8 @@ body {
 
 .partners_container {
   max-width: 95.625rem;
-  width: 100%; }
+  width: 100%;
+  padding-left: 0.9375rem; }
 
 .security_content {
   width: 100%;
@@ -112,7 +113,8 @@ body {
       margin-bottom: 6.25rem; }
 
 .btn_main {
-  width: 10.5rem;
+  max-width: 10.5rem;
+  width: 100%;
   height: 2.8125rem;
   display: flex;
   justify-content: center;
@@ -163,6 +165,30 @@ body {
 .partners_text {
   color: #1c1c1c;
   font: 300 1.25rem/1.7 "lato"; }
+
+.news_date {
+  color: #1c1c1c;
+  font: 700 1.25rem/1.7 "lato";
+  letter-spacing: 0.025rem; }
+
+.news_text {
+  color: #1c1c1c;
+  font: 300 1.25rem/1.7 "lato";
+  max-width: 40rem;
+  max-height: 11.875rem;
+  overflow: hidden;
+  width: 100%; }
+
+.contacts {
+  display: flex;
+  flex-direction: column; }
+  .contacts a {
+    color: #ffffff;
+    font: 400 1.375rem/1.2 "Proxima Nova";
+    letter-spacing: 0.0275rem;
+    margin-bottom: 2.5rem; }
+    .contacts a i {
+      margin-right: 1.5625rem; }
 
 @font-face {
   /*Lato-Bold*/
@@ -422,11 +448,14 @@ body {
     .deposit .deposit_wrap .deposit_elem {
       position: relative;
       max-width: 20%;
-      width: 100%;
+      width: 20%;
       margin-right: 1.25rem;
       background-color: #fff; }
       .deposit .deposit_wrap .deposit_elem:last-child {
-        margin-right: 0; }
+        margin-right: 0;
+        height: 550px; }
+      .deposit .deposit_wrap .deposit_elem:first-child {
+        height: 550px; }
       .deposit .deposit_wrap .deposit_elem .deposit_head {
         display: flex;
         flex-direction: column;
@@ -448,7 +477,7 @@ body {
           letter-spacing: 0.05875rem;
           font: 700 2.9375rem/1.8 "lato"; }
       .deposit .deposit_wrap .deposit_elem .deposit_content {
-        padding: 15rem 2.5rem 0;
+        padding: 15rem 2.5rem 3.125rem;
         width: 100%;
         height: auto; }
         .deposit .deposit_wrap .deposit_elem .deposit_content p {
@@ -472,8 +501,7 @@ body {
         .deposit .deposit_wrap .deposit_elem .deposit_content h4 {
           text-align: center;
           text-transform: uppercase;
-          font: 700 1.0625rem/1.2 "lato";
-          margin-bottom: 3.125rem; }
+          font: 700 1.0625rem/1.2 "lato"; }
 
 .deposit_increase {
   width: 100%;
@@ -561,6 +589,35 @@ body {
             margin-bottom: 3.4375rem; }
             .investments .investments_wrap .investments_content .container .investments_text p:last-child {
               margin-bottom: 0; }
+
+.investors {
+  width: 100%;
+  position: relative;
+  padding: 6.25rem 0 3.75rem; }
+  .investors .container .investors_elem {
+    width: 100%;
+    position: relative; }
+    .investors .container .investors_elem .investors_text {
+      color: #1c1c1c;
+      font: 300 1.25rem/1.7 "lato";
+      max-width: 34.375rem;
+      width: 100%;
+      margin-bottom: 3.4375rem; }
+      .investors .container .investors_elem .investors_text span {
+        font-weight: 700; }
+    .investors .container .investors_elem .policy_invest {
+      max-width: 47.8125rem;
+      width: 100%;
+      position: relative; }
+      .investors .container .investors_elem .policy_invest h3 {
+        font: 400 1.875rem/1.3 "Proxima Nova - Extrabld";
+        text-transform: uppercase;
+        margin-bottom: 2.5rem; }
+      .investors .container .investors_elem .policy_invest p {
+        font: 300 1.25rem/1.7 "lato"; }
+        .investors .container .investors_elem .policy_invest p span {
+          font: 700 1.875rem/1.16 "lato";
+          margin-right: 0.625rem; }
 
 .advantages {
   margin-top: 7.5rem;
@@ -774,37 +831,45 @@ body {
 .programs_example {
   width: 100%;
   position: relative;
-  margin-bottom: 11.875rem;
-  display: flex;
-  justify-content: flex-end; }
-  .programs_example .programs_container .example_elem {
-    position: relative;
-    max-width: 65.625rem;
+  margin-bottom: 11.875rem; }
+  .programs_example .programs_container_el {
+    max-width: 95.625rem;
     width: 100%;
-    border: 0.9375rem solid #bbbbbb;
-    box-shadow: -0.75rem 1.4375rem 4.25rem rgba(0, 0, 0, 0.06);
-    padding: 3.125rem 7.5rem; }
-    .programs_example .programs_container .example_elem p {
-      color: #1c1c1c;
-      font: 300 1.25rem/1.7 "lato"; }
-      .programs_example .programs_container .example_elem p b {
-        font-size: 1.875rem;
-        font-weight: 700;
-        letter-spacing: 0.0375rem;
-        margin-right: 0.625rem; }
-      .programs_example .programs_container .example_elem p:first-child {
-        font-weight: 700;
-        margin-bottom: 1.875rem; }
-      .programs_example .programs_container .example_elem p:last-child {
-        margin-top: 3.125rem;
-        font-style: italic; }
-  .programs_example .programs_container .example_img {
-    position: absolute;
-    right: 8%;
-    top: 15%;
-    width: 25%; }
-    .programs_example .programs_container .example_img img {
-      position: relative; }
+    position: relative;
+    margin: auto;
+    padding: 0 0.9375rem; }
+    .programs_example .programs_container_el .example_elem {
+      position: relative;
+      max-width: 65.625rem;
+      width: 100%;
+      border: 0.9375rem solid #bbbbbb;
+      box-shadow: -0.75rem 1.4375rem 4.25rem rgba(0, 0, 0, 0.06);
+      padding: 3.125rem 7.5rem; }
+      .programs_example .programs_container_el .example_elem p {
+        color: #1c1c1c;
+        font: 300 1.25rem/1.7 "lato"; }
+        .programs_example .programs_container_el .example_elem p b {
+          font-size: 1.875rem;
+          font-weight: 700;
+          letter-spacing: 0.0375rem;
+          margin-right: 0.625rem; }
+        .programs_example .programs_container_el .example_elem p:first-child {
+          font-weight: 700;
+          margin-bottom: 1.875rem; }
+        .programs_example .programs_container_el .example_elem p:last-child {
+          margin-top: 3.125rem;
+          font-style: italic; }
+    .programs_example .programs_container_el .example_img {
+      position: absolute;
+      right: 8%;
+      top: 15%;
+      max-width: 32.5rem;
+      width: 100%; }
+      .programs_example .programs_container_el .example_img img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
 
 .news {
   width: 100%;
@@ -872,6 +937,121 @@ body {
       align-self: center;
       margin-bottom: 6.25rem; }
 
+.news_section {
+  width: 100%;
+  position: relative; }
+  .news_section .news_main_container {
+    max-width: 99.375rem;
+    width: 100%;
+    margin: auto;
+    position: relative; }
+    .news_section .news_main_container .new_block {
+      width: 100%;
+      padding: 6.25rem 0 7.5rem;
+      position: relative;
+      border-bottom: 0.9375rem solid #e1e1e1; }
+      .news_section .news_main_container .new_block .article_elem_wrap {
+        width: 100%;
+        max-width: 65.625rem;
+        margin: auto; }
+        .news_section .news_main_container .new_block .article_elem_wrap h2 {
+          color: #1c1c1c;
+          text-transform: uppercase;
+          font: 700 1.875rem/1.1 "Proxima Nova";
+          letter-spacing: 0.0375rem;
+          margin-bottom: 3.125rem; }
+        .news_section .news_main_container .new_block .article_elem_wrap .article_elem {
+          position: relative;
+          display: flex;
+          justify-content: space-between; }
+          .news_section .news_main_container .new_block .article_elem_wrap .article_elem .article_img {
+            max-width: 25rem;
+            width: 100%;
+            height: 21.375rem; }
+            .news_section .news_main_container .new_block .article_elem_wrap .article_elem .article_img img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          .news_section .news_main_container .new_block .article_elem_wrap .article_elem .article_text {
+            padding-left: 3.75rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; }
+            .news_section .news_main_container .new_block .article_elem_wrap .article_elem .article_text .btn_main {
+              align-self: flex-end; }
+    .news_section .news_main_container .news_control {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 6.25rem 0 9.375rem; }
+      .news_section .news_main_container .news_control a {
+        color: #1c1c1c;
+        font: 700 1.875rem/1.1 "lato";
+        margin-right: 3.75rem;
+        position: relative;
+        display: block; }
+        .news_section .news_main_container .news_control a::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 0;
+          height: 0;
+          background-color: transparent;
+          border: 0.125rem solid #000000;
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+          transition: .4s;
+          opacity: 0; }
+        .news_section .news_main_container .news_control a:hover::before {
+          width: 3.75rem;
+          height: 3.75rem;
+          opacity: 1;
+          left: -1.25rem;
+          top: -0.9375rem; }
+        .news_section .news_main_container .news_control a:last-child {
+          margin-right: 0; }
+
+.main_news {
+  width: 100%;
+  position: relative;
+  padding: 7.1875rem; }
+  .main_news h2 {
+    color: #1c1c1c;
+    text-transform: uppercase;
+    font: 700 2.5rem/0.8 "Proxima Nova";
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin-bottom: 8.125rem; }
+  .main_news .main_news_container {
+    position: relative;
+    max-width: 85.625rem;
+    width: 100%;
+    margin: auto; }
+    .main_news .main_news_container .main_news-content {
+      display: flex;
+      position: relative;
+      width: 100%; }
+      .main_news .main_news_container .main_news-content .main_news-img {
+        max-width: 34.375rem;
+        width: 100%;
+        height: 34.375rem;
+        position: relative; }
+        .main_news .main_news_container .main_news-content .main_news-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .main_news .main_news_container .main_news-content .main_news_text {
+        position: relative;
+        padding-left: 4.375rem; }
+        .main_news .main_news_container .main_news-content .main_news_text h5 {
+          margin-bottom: 1.875rem; }
+        .main_news .main_news_container .main_news-content .main_news_text p {
+          max-width: 46.5625rem;
+          margin-bottom: 2.5rem; }
+          .main_news .main_news_container .main_news-content .main_news_text p:last-child {
+            margin-bottom: 0; }
+
 .main_footer {
   width: 100%;
   position: relative;
@@ -926,16 +1106,6 @@ body {
               color: #ffdc54; }
     .main_footer .footer_container .footer_content .contacts_footer {
       position: relative; }
-      .main_footer .footer_container .footer_content .contacts_footer .contacts {
-        display: flex;
-        flex-direction: column; }
-        .main_footer .footer_container .footer_content .contacts_footer .contacts a {
-          color: #ffffff;
-          font: 400 1.375rem/1.2 "Proxima Nova";
-          letter-spacing: 0.0275rem;
-          margin-bottom: 2.5rem; }
-          .main_footer .footer_container .footer_content .contacts_footer .contacts a i {
-            margin-right: 1.5625rem; }
       .main_footer .footer_container .footer_content .contacts_footer .social_footer {
         margin-top: 1.875rem; }
         .main_footer .footer_container .footer_content .contacts_footer .social_footer a {
@@ -1046,6 +1216,9 @@ body {
     justify-content: center;
     align-items: center; }
     .top_section .top_content .top_title {
+      text-align: center;
+      max-width: 62.5rem;
+      width: 100%;
       color: #ffffff;
       text-transform: uppercase;
       font: 700 4.3125rem/1.4 "Proxima Nova";
@@ -1173,7 +1346,7 @@ body {
         max-width: 66.875rem;
         width: 100%;
         position: absolute;
-        left: -10.625rem;
+        left: -6.25rem;
         padding: 5.625rem 8.125rem 5rem;
         background-color: #fff;
         border: 0.9375rem solid #bbbbbb;
@@ -1192,5 +1365,104 @@ body {
 
 .referral_next {
   height: 58.75rem !important; }
+
+.faq {
+  position: relative;
+  width: 100%;
+  margin: 8.75rem 0 6.25rem; }
+  .faq .faq_content {
+    max-width: 67.1875rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    box-shadow: -12px 23px 68px rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+    padding: 6.25rem;
+    overflow: hidden; }
+    .faq .faq_content h3 {
+      position: relative;
+      color: #1c1c1c;
+      font: 700 1.875rem/1.3 "lato";
+      letter-spacing: 0.0375rem; }
+      .faq .faq_content h3::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 0.4375rem;
+        background-color: #909193;
+        top: 0.9375rem;
+        left: -55%; }
+    .faq .faq_content p {
+      color: #1c1c1c;
+      font: 300 20px/1.7 "lato"/16pxrem;
+      margin-bottom: 3.75rem; }
+      .faq .faq_content p:last-child {
+        margin-bottom: 0; }
+  .faq .faq_img {
+    position: absolute;
+    z-index: -1;
+    max-width: 50rem;
+    width: 100%; }
+    .faq .faq_img::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 1; }
+    .faq .faq_img img {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+    .faq .faq_img:first-child {
+      top: 15%;
+      right: 0; }
+    .faq .faq_img:nth-child(2) {
+      top: 30%;
+      left: 0; }
+    .faq .faq_img:nth-child(3) {
+      bottom: -10%;
+      right: 0; }
+
+.contacts_wrap {
+  width: 100%;
+  position: relative;
+  padding: 9.375rem 0 8.125rem; }
+  .contacts_wrap .contacts_info {
+    max-width: 56.25rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .contacts_wrap .contacts_info .contacts a {
+      color: #1c1c1c;
+      font: 700 1.375rem/1.2 #lato;
+      letter-spacing: 0.0275rem; }
+      .contacts_wrap .contacts_info .contacts a i {
+        color: #ffdc54; }
+    .contacts_wrap .contacts_info .contacts h2 {
+      color: #1c1c1c;
+      font: 700 1.875rem "Proxima Nova";
+      text-transform: uppercase;
+      margin-bottom: 3.75rem; }
+
+.map_title {
+  text-align: center;
+  padding: 5.625rem 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  position: relative;
+  color: #1c1c1c;
+  text-transform: uppercase;
+  font: 400 1.875rem/1 "Proxima Nova - Extrabld";
+  letter-spacing: 0.0375rem; }
+
+#map {
+  width: 100%;
+  height: 100vh; }
 
 /*# sourceMappingURL=main.css.map*/

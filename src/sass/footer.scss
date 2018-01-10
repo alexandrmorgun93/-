@@ -58,20 +58,6 @@
       }
       .contacts_footer {
         position: relative;
-        .contacts {
-          display: flex;
-          flex-direction: column;
-          a {
-            color: #ffffff;
-            font: 400 rem(22px)/1.2 $proxima;
-            letter-spacing: rem(0.44px);
-            margin-bottom: rem(40px);
-            i {
-              margin-right: rem(25px);
-            }
-          }
-
-        }
         .social_footer {
           margin-top: rem(30px);
           a {

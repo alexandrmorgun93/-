@@ -2,7 +2,7 @@ body {
   font: 300 rem(17px)/1.7 $lato;
   letter-spacing: rem(0.4px);
 }
-
+//CONTAINERS
 .container {
   max-width: rem(1200px);
   width: 100%;
@@ -24,11 +24,6 @@ body {
   margin: auto;
 }
 
-//.partners_container {
-//  max-width: rem(1530px);
-//  width: 100%;
-//}
-
 .container_security {
   max-width: rem(1400px);
   width: 100%;
@@ -47,6 +42,7 @@ body {
 .partners_container {
   max-width: rem(1530px);
   width: 100%;
+  padding-left: rem(15px);
 }
 
 //security content
@@ -74,7 +70,8 @@ body {
 }
 
 .btn_main {
-  width: rem(168px);
+  max-width: rem(168px);
+  width: 100%;
   height: rem(45px);
   display: flex;
   justify-content: center;
@@ -125,4 +122,34 @@ body {
 .partners_text {
   color: #1c1c1c;
   font: 300 rem(20px)/1.7 $lato;
+
+}
+//news
+.news_date {
+  color: #1c1c1c;
+  font: 700 rem(20px)/1.7 $lato;
+  letter-spacing: rem(0.4px);
+}
+.news_text {
+  color: #1c1c1c;
+  font: 300 rem(20px)/1.7 $lato;
+  max-width: rem(640px);
+  max-height: rem(190px);
+  overflow: hidden;
+  width: 100%;
+}
+//social
+.contacts {
+  display: flex;
+  flex-direction: column;
+  a {
+    color: #ffffff;
+    font: 400 rem(22px)/1.2 $proxima;
+    letter-spacing: rem(0.44px);
+    margin-bottom: rem(40px);
+    i {
+      margin-right: rem(25px);
+    }
+  }
+
 }

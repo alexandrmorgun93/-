@@ -9,11 +9,15 @@
     .deposit_elem {
       position: relative;
       max-width: 20%;
-      width: 100%;
+      width: 20%;
       margin-right: rem(20px);
       background-color: #fff;
       &:last-child {
         margin-right: 0;
+        height: 550px;
+      }
+      &:first-child {
+        height: 550px;
       }
       .deposit_head {
         display: flex;
@@ -39,7 +43,7 @@
         }
       }
       .deposit_content {
-        padding: rem(240px) rem(40px) 0;
+        padding: rem(240px) rem(40px) rem(50px);
         width: 100%;
         height: auto;
 
@@ -64,7 +68,7 @@
           text-align: center;
           text-transform: uppercase;
           font: 700 rem(17px)/1.2 $lato;
-          margin-bottom: rem(50px);
+
         }
       }
     }
