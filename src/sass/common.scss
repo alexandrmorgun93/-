@@ -2,6 +2,7 @@ body {
   font: 300 rem(17px)/1.7 $lato;
   letter-spacing: rem(0.4px);
 }
+
 //CONTAINERS
 .container {
   max-width: rem(1200px);
@@ -42,7 +43,13 @@ body {
 .partners_container {
   max-width: rem(1530px);
   width: 100%;
-  padding-left: rem(15px);
+}
+
+.room_container {
+  max-width: rem(1485px);
+  width: 100%;
+  position: relative;
+  margin: auto;
 }
 
 //security content
@@ -124,12 +131,20 @@ body {
   font: 300 rem(20px)/1.7 $lato;
 
 }
+
+.room_title {
+  color: #1c1c1c;
+  font: 700 rem(30px)/2.5 $proxima;
+  text-transform: uppercase;
+}
+
 //news
 .news_date {
   color: #1c1c1c;
   font: 700 rem(20px)/1.7 $lato;
   letter-spacing: rem(0.4px);
 }
+
 .news_text {
   color: #1c1c1c;
   font: 300 rem(20px)/1.7 $lato;
@@ -138,6 +153,7 @@ body {
   overflow: hidden;
   width: 100%;
 }
+
 //social
 .contacts {
   display: flex;

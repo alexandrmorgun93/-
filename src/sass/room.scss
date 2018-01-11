@@ -1,0 +1,214 @@
+.room {
+  width: 100%;
+  position: relative;
+  border-top: rem(23px) solid #434343;
+  .room_container {
+    .room_content {
+      padding: rem(70px) rem(140px) rem(120px);
+      width: 100%;
+      position: relative;
+      display: flex;
+      box-shadow: rem(-12px) rem(23px) rem(68px) rgba(0, 0, 0, 0.06);
+      background-color: #ffffff;
+      .left_content {
+        //max-width: rem(300px);
+        //width: 100%;
+        max-width: 20%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .left_head {
+          position: relative;
+          margin-bottom: rem(45px);
+          .avatar {
+            width: rem(194px);
+            height: rem(194px);
+            border-radius: 50%;
+            background-color: #cccccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: rem(20px);
+            i {
+              font-size: rem(80px);
+              color: #9d9d9d;
+            }
+          }
+          .add_avatar {
+            color: #284391;
+            text-decoration: underline;
+            font: 700 rem(18px)/1.8 $lato;
+            letter-spacing: rem(0.36px);
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: rem(50px);
+          }
+          .avatar_item {
+            color: #1c1c1c;
+            font: 400 rem(18px)/1.8 $lato;
+            letter-spacing: rem(0.36px);
+            text-align: center;
+            a {
+              color: #284391;
+              margin-left: rem(8px);
+            }
+          }
+        }
+        .left_menu {
+          position: relative;
+          width: 100%;
+          ul {
+            max-width: rem(260px);
+            width: 100%;
+            li {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              position: relative;
+              height: rem(55px);
+              width: 100%;
+              border: 1px solid $yellow-color;
+              transition: .4s;
+              padding: 0 rem(15px) 0 rem(30px);
+              border-bottom: none;
+              &:last-child {
+                border-bottom: 1px solid $yellow-color;
+              }
+              &:hover {
+                background-color: $yellow-color;
+                .left_icon {
+                  color: #434343;
+                }
+              }
+              a {
+                display: block;
+                color: #1c1c1c;
+                text-transform: uppercase;
+                font: 700 rem(16px)/2 $lato;
+                letter-spacing: rem(0.32px);
+              }
+              .left_icon {
+                color: $yellow-color;
+                margin-right: rem(15px);
+              }
+            }
+          }
+        }
+      }
+      .right_content {
+        position: relative;
+        max-width: 80%;
+        width: 80%;
+        padding-left: rem(30px);
+        .right_room {
+          width: 100%;
+          position: relative;
+          margin-bottom: rem(50px);
+          .right_room-card {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #f6f6f6;
+            padding: rem(35px) rem(25px);
+            .room_card-elem {
+              max-width: rem(264px);
+              width: 100%;
+              flex: 1 1 35%;
+              margin: 0 rem(30px) rem(25px) 0;
+              p {
+                width: 100%;
+                text-transform: uppercase;
+                font: 400 rem(16px)/2 $lato;
+                letter-spacing: rem(0.32px);
+                background-color: #fff;
+                text-align: center;
+                padding: rem(30px) 0;
+                color: #1c1c1c;
+                &:first-child {
+                  background-color: #434343;
+                  padding: rem(20px) 0;
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+        }
+        .statistics_room {
+          width: 100%;
+          position: relative;
+          h2 {
+            text-transform: uppercase;
+            font: 700 rem(18px)/1.8 $lato;
+            color: #c89358;
+            margin-left: rem(30px);
+          }
+          p {
+            font: 700 rem(18px)/1.8 $lato;
+            color: #1c1c1c;
+            margin-left: rem(30px);
+          }
+          .statistics_room-table {
+            margin-top: rem(40px);
+            width: 100%;
+            position: relative;
+            display: flex;
+            ul {
+              width: 100%;
+              &:first-child {
+                li {
+                  border-left: rem(1px) solid #cccccc;
+                }
+              }
+              &:last-child {
+                li {
+                  border-right: rem(1px) solid #cccccc;
+                  margin-right: 0 !important;
+                }
+              }
+
+              li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #434343;
+                font: 400 rem(16px) $lato;
+                height: rem(55px);
+                border-top: rem(1px) solid #cccccc;
+                letter-spacing: rem(0.32px);
+                &:first-child {
+                  background-color: #434343;
+                  color: #ffffff;
+                  margin: 0 rem(3px) rem(6px) 0;
+                  //padding: rem(20px) rem(30px);
+                }
+                &:last-child {
+                  border-bottom: rem(1px) solid #cccccc;
+                }
+
+              }
+              &:first-child {
+                flex: 1 1 rem(187px);
+              }
+              &:nth-child(2), &:nth-child(3) {
+                flex: 1 1 rem(125px);
+              }
+              &:nth-child(4) {
+                flex: 1 1 rem(160px);
+              }
+              &:nth-child(5) {
+                flex: 1 1 rem(150px);
+              }
+              &:last-child {
+                flex: 1 1 rem(145px);
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
   position: relative;
   height: rem(180px);
   background-color: #fff;
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
     .logo {
@@ -100,6 +100,44 @@
         }
         .btn_main {
           margin-right: rem(20px);
+        }
+      }
+    }
+  }
+}
+
+//room head
+.room_head {
+  width: 100%;
+  position: relative;
+  height: rem(180px);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .logo {
+      width: rem(146px);
+      height: rem(150px);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .language {
+      display: flex;
+      margin-bottom: rem(40px);
+      a {
+        width: rem(30px);
+        height: rem(17px);
+        margin-right: rem(25px);
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
     }

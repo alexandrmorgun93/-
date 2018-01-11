@@ -93,8 +93,13 @@ body {
 
 .partners_container {
   max-width: 95.625rem;
+  width: 100%; }
+
+.room_container {
+  max-width: 92.8125rem;
   width: 100%;
-  padding-left: 0.9375rem; }
+  position: relative;
+  margin: auto; }
 
 .security_content {
   width: 100%;
@@ -165,6 +170,11 @@ body {
 .partners_text {
   color: #1c1c1c;
   font: 300 1.25rem/1.7 "lato"; }
+
+.room_title {
+  color: #1c1c1c;
+  font: 700 1.875rem/2.5 "Proxima Nova";
+  text-transform: uppercase; }
 
 .news_date {
   color: #1c1c1c;
@@ -372,6 +382,35 @@ body {
           cursor: pointer; }
         .main_head .container .head_entrance .form_reg .btn_main {
           margin-right: 1.25rem; }
+
+.room_head {
+  width: 100%;
+  position: relative;
+  height: 11.25rem; }
+  .room_head .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .room_head .container .logo {
+      width: 9.125rem;
+      height: 9.375rem; }
+      .room_head .container .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .room_head .container .language {
+      display: flex;
+      margin-bottom: 2.5rem; }
+      .room_head .container .language a {
+        width: 1.875rem;
+        height: 1.0625rem;
+        margin-right: 1.5625rem; }
+        .room_head .container .language a:last-child {
+          margin-right: 0; }
+        .room_head .container .language a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
 
 .reliability {
   width: 100%;
@@ -618,6 +657,106 @@ body {
         .investors .container .investors_elem .policy_invest p span {
           font: 700 1.875rem/1.16 "lato";
           margin-right: 0.625rem; }
+
+.investors_payments {
+  width: 100%;
+  position: relative;
+  padding-top: 8.75rem; }
+  .investors_payments h2 {
+    max-width: 69.875rem;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #1c1c1c;
+    font: 700 1.875rem/1.3 "lato"; }
+  .investors_payments .payments_other {
+    width: 100%;
+    position: relative;
+    padding: 3.75rem 0 3.125rem;
+    background-color: #f9f9f9; }
+    .investors_payments .payments_other .partners_container {
+      margin: auto; }
+      .investors_payments .payments_other .partners_container .other_wrap {
+        width: 100%;
+        display: flex;
+        align-items: center; }
+        .investors_payments .payments_other .partners_container .other_wrap .payments_img {
+          width: 17.5rem;
+          height: 4.375rem;
+          margin-right: 1.875rem; }
+          .investors_payments .payments_other .partners_container .other_wrap .payments_img img {
+            width: 100%;
+            object-fit: cover; }
+        .investors_payments .payments_other .partners_container .other_wrap p {
+          max-width: 49.375rem;
+          width: 100%;
+          color: #1c1c1c;
+          font: 300 1.25rem/1.7 "lato"; }
+
+.payments_content {
+  width: 100%;
+  position: relative; }
+  .payments_content .payment_content_img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0; }
+  .payments_content .payments_elem {
+    position: absolute;
+    z-index: 1;
+    top: 12.5rem;
+    left: 15%;
+    max-width: 66.875rem;
+    width: 100%;
+    background-color: #fff;
+    padding: 5.625rem 8.125rem 6.25rem 10rem;
+    box-shadow: -12px 23px 68px rgba(0, 0, 0, 0.06); }
+    .payments_content .payments_elem h2 {
+      color: #1c1c1c;
+      letter-spacing: 0.0375rem;
+      text-transform: uppercase;
+      font: 400 1.875rem/1.16 "Proxima Nova - Extrabld";
+      margin-bottom: 2.8125rem; }
+    .payments_content .payments_elem p {
+      margin-bottom: 5rem;
+      color: #1c1c1c;
+      font: 300 1.25rem/1.75 "lato"; }
+  .payments_content .right_content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 12.5rem; }
+    .payments_content .right_content .content_wrap {
+      width: 100%;
+      max-width: 78.125rem; }
+      .payments_content .right_content .content_wrap .payment_right_img {
+        position: relative;
+        width: 100%;
+        max-height: 100rem; }
+        .payments_content .right_content .content_wrap .payment_right_img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .payments_content .right_content .content_wrap .payments_right_elem {
+        max-width: 66.875rem;
+        width: 100%;
+        background-color: #fff;
+        padding: 5.625rem 8.125rem 6.25rem 10rem;
+        box-shadow: -12px 23px 68px rgba(0, 0, 0, 0.06); }
+        .payments_content .right_content .content_wrap .payments_right_elem h2 {
+          color: #1c1c1c;
+          letter-spacing: 0.0375rem;
+          text-transform: uppercase;
+          font: 400 1.875rem/1.16 "Proxima Nova - Extrabld";
+          margin-bottom: 2.8125rem; }
+        .payments_content .right_content .content_wrap .payments_right_elem p {
+          color: #1c1c1c;
+          font: 300 1.25rem/1.75 "lato"; }
+          .payments_content .right_content .content_wrap .payments_right_elem p span {
+            font-weight: 700;
+            font-size: 1.875rem;
+            margin-right: 0.9375rem; }
 
 .advantages {
   margin-top: 7.5rem;
@@ -1056,8 +1195,7 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 34.0625rem;
-  border-top: 2.1875rem solid #f3f3f3; }
+  height: 34.0625rem; }
   .main_footer::before {
     content: "";
     display: block;
@@ -1464,5 +1602,240 @@ body {
 #map {
   width: 100%;
   height: 100vh; }
+
+.room {
+  width: 100%;
+  position: relative;
+  border-top: 1.4375rem solid #434343; }
+  .room .room_container .room_content {
+    padding: 4.375rem 8.75rem 7.5rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    box-shadow: -0.75rem 1.4375rem 4.25rem rgba(0, 0, 0, 0.06);
+    background-color: #ffffff; }
+    .room .room_container .room_content .left_content {
+      max-width: 20%;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .room .room_container .room_content .left_content .left_head {
+        position: relative;
+        margin-bottom: 2.8125rem; }
+        .room .room_container .room_content .left_content .left_head .avatar {
+          width: 12.125rem;
+          height: 12.125rem;
+          border-radius: 50%;
+          background-color: #cccccc;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1.25rem; }
+          .room .room_container .room_content .left_content .left_head .avatar i {
+            font-size: 5rem;
+            color: #9d9d9d; }
+        .room .room_container .room_content .left_content .left_head .add_avatar {
+          color: #284391;
+          text-decoration: underline;
+          font: 700 1.125rem/1.8 "lato";
+          letter-spacing: 0.0225rem;
+          text-align: center;
+          cursor: pointer;
+          margin-bottom: 3.125rem; }
+        .room .room_container .room_content .left_content .left_head .avatar_item {
+          color: #1c1c1c;
+          font: 400 1.125rem/1.8 "lato";
+          letter-spacing: 0.0225rem;
+          text-align: center; }
+          .room .room_container .room_content .left_content .left_head .avatar_item a {
+            color: #284391;
+            margin-left: 0.5rem; }
+      .room .room_container .room_content .left_content .left_menu {
+        position: relative;
+        width: 100%; }
+        .room .room_container .room_content .left_content .left_menu ul {
+          max-width: 16.25rem;
+          width: 100%; }
+          .room .room_container .room_content .left_content .left_menu ul li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            height: 3.4375rem;
+            width: 100%;
+            border: 1px solid #ffdc54;
+            transition: .4s;
+            padding: 0 0.9375rem 0 1.875rem;
+            border-bottom: none; }
+            .room .room_container .room_content .left_content .left_menu ul li:last-child {
+              border-bottom: 1px solid #ffdc54; }
+            .room .room_container .room_content .left_content .left_menu ul li:hover {
+              background-color: #ffdc54; }
+              .room .room_container .room_content .left_content .left_menu ul li:hover .left_icon {
+                color: #434343; }
+            .room .room_container .room_content .left_content .left_menu ul li a {
+              display: block;
+              color: #1c1c1c;
+              text-transform: uppercase;
+              font: 700 1rem/2 "lato";
+              letter-spacing: 0.02rem; }
+            .room .room_container .room_content .left_content .left_menu ul li .left_icon {
+              color: #ffdc54;
+              margin-right: 0.9375rem; }
+    .room .room_container .room_content .right_content {
+      position: relative;
+      max-width: 80%;
+      width: 80%;
+      padding-left: 1.875rem; }
+      .room .room_container .room_content .right_content .right_room {
+        width: 100%;
+        position: relative;
+        margin-bottom: 3.125rem; }
+        .room .room_container .room_content .right_content .right_room .right_room-card {
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          background-color: #f6f6f6;
+          padding: 2.1875rem 1.5625rem; }
+          .room .room_container .room_content .right_content .right_room .right_room-card .room_card-elem {
+            max-width: 16.5rem;
+            width: 100%;
+            flex: 1 1 35%;
+            margin: 0 1.875rem 1.5625rem 0; }
+            .room .room_container .room_content .right_content .right_room .right_room-card .room_card-elem p {
+              width: 100%;
+              text-transform: uppercase;
+              font: 400 1rem/2 "lato";
+              letter-spacing: 0.02rem;
+              background-color: #fff;
+              text-align: center;
+              padding: 1.875rem 0;
+              color: #1c1c1c; }
+              .room .room_container .room_content .right_content .right_room .right_room-card .room_card-elem p:first-child {
+                background-color: #434343;
+                padding: 1.25rem 0;
+                color: #ffffff; }
+      .room .room_container .room_content .right_content .statistics_room {
+        width: 100%;
+        position: relative; }
+        .room .room_container .room_content .right_content .statistics_room h2 {
+          text-transform: uppercase;
+          font: 700 1.125rem/1.8 "lato";
+          color: #c89358;
+          margin-left: 1.875rem; }
+        .room .room_container .room_content .right_content .statistics_room p {
+          font: 700 1.125rem/1.8 "lato";
+          color: #1c1c1c;
+          margin-left: 1.875rem; }
+        .room .room_container .room_content .right_content .statistics_room .statistics_room-table {
+          margin-top: 2.5rem;
+          width: 100%;
+          position: relative;
+          display: flex; }
+          .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul {
+            width: 100%; }
+            .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul:first-child li {
+              border-left: 0.0625rem solid #cccccc; }
+            .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul:last-child li {
+              border-right: 0.0625rem solid #cccccc;
+              margin-right: 0 !important; }
+            .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul li {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #434343;
+              font: 400 1rem "lato";
+              height: 3.4375rem;
+              border-top: 0.0625rem solid #cccccc;
+              letter-spacing: 0.02rem; }
+              .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul li:first-child {
+                background-color: #434343;
+                color: #ffffff;
+                margin: 0 0.1875rem 0.375rem 0; }
+              .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul li:last-child {
+                border-bottom: 0.0625rem solid #cccccc; }
+            .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul:first-child {
+              flex: 1 1 11.6875rem; }
+            .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul:nth-child(2), .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul:nth-child(3) {
+              flex: 1 1 7.8125rem; }
+            .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul:nth-child(4) {
+              flex: 1 1 10rem; }
+            .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul:nth-child(5) {
+              flex: 1 1 9.375rem; }
+            .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul:last-child {
+              flex: 1 1 9.0625rem;
+              margin-right: 0; }
+
+.registration {
+  width: 100%;
+  position: relative;
+  background-color: #f9f9f9; }
+  .registration .room_container .registration_content {
+    width: 100%;
+    position: relative;
+    box-shadow: -12px 23px 68px rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+    padding: 7.5rem 0; }
+    .registration .room_container .registration_content .container_form {
+      display: flex;
+      justify-content: space-between;
+      max-width: 63.75rem;
+      width: 100%;
+      margin: auto;
+      position: relative; }
+      .registration .room_container .registration_content .container_form .registration-form {
+        max-width: 26.5625rem;
+        width: 100%;
+        position: relative; }
+        .registration .room_container .registration_content .container_form .registration-form h2 {
+          margin-bottom: 3.125rem;
+          text-align: center; }
+        .registration .room_container .registration_content .container_form .registration-form form {
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: column; }
+          .registration .room_container .registration_content .container_form .registration-form form input {
+            width: 100%;
+            height: 2.8125rem;
+            border-radius: 1.4375rem;
+            border: 0.0625rem solid #cecece;
+            background-color: #fafafa;
+            margin-bottom: 1.5625rem;
+            color: #1c1c1c;
+            font: 300 1.125rem "lato";
+            letter-spacing: 0.0225rem;
+            padding-left: 1.875rem; }
+          .registration .room_container .registration_content .container_form .registration-form form .feedback_check {
+            display: flex;
+            margin-bottom: 2.5rem; }
+            .registration .room_container .registration_content .container_form .registration-form form .feedback_check input {
+              width: 1.3125rem;
+              height: 1.3125rem;
+              border-radius: 0.6875rem;
+              border: 0.1875rem solid #cecece;
+              margin: 0 0.625rem 0 0;
+              background-color: #ffffff; }
+            .registration .room_container .registration_content .container_form .registration-form form .feedback_check p {
+              color: #1c1c1c;
+              font: 700 1rem/1.2 "lato";
+              letter-spacing: 0.02rem; }
+          .registration .room_container .registration_content .container_form .registration-form form .form_text {
+            color: #1c1c1c;
+            font: 700 1rem "lato";
+            margin-left: 1.875rem;
+            margin-bottom: 1.5625rem; }
+            .registration .room_container .registration_content .container_form .registration-form form .form_text a {
+              color: #284391;
+              text-decoration: underline; }
+          .registration .room_container .registration_content .container_form .registration-form form .btn {
+            max-width: 17.5rem;
+            width: 100%;
+            align-self: center; }
+          .registration .room_container .registration_content .container_form .registration-form form .btn_main {
+            align-self: center; }
 
 /*# sourceMappingURL=main.css.map*/

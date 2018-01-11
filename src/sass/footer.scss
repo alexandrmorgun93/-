@@ -3,7 +3,6 @@
   position: relative;
   overflow: hidden;
   height: rem(545px);
-  border-top: rem(35px) solid #f3f3f3;
   &::before {
     @include before_fig(100%, 100%, #191b1c);
     z-index: 1;
