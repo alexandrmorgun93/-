@@ -154,6 +154,17 @@ body {
   width: 100%;
 }
 
+.room_text {
+  color: #1c1c1c;
+  font: 700 rem(18px)/1.8 $lato;
+}
+
+.room_title-item {
+  color: #c89358;
+  font: 700 rem(18px)/1.8 $lato;
+  text-transform: uppercase;
+}
+
 //social
 .contacts {
   display: flex;
@@ -167,5 +178,70 @@ body {
       margin-right: rem(25px);
     }
   }
+}
 
+//DEPOSIT CARDS
+.deposit_card {
+  position: relative;
+  max-width: rem(160px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: rem(10px);
+  transition: .4s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  .card_head {
+    width: rem(160px);
+    height: rem(160px);
+    border-radius: 50%;
+    background-image: $yllow-circle;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: rem(-80px);
+    z-index: 1;
+    p {
+      color: #333333;
+      font: 700 rem(13px)/2 $lato;
+      text-transform: uppercase;
+    }
+    h3 {
+      color: #000000;
+      font: 700 rem(21px) $lato;
+      letter-spacing: rem(0.94px);
+      margin-bottom: 0;
+    }
+  }
+  .card_content {
+    padding: rem(90px) rem(10px) rem(20px);
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    box-shadow: rem(-12px) rem(23px) rem(68px) rgba(0, 0, 0, 0.06);
+    p {
+      position: relative;
+      text-align: center;
+      font: 300 rem(13px)/1.3 $lato;
+      text-transform: uppercase;
+      margin-bottom: rem(25px);
+      &:nth-child(4) {
+        color: #bc773f;
+      }
+      &::before {
+        @include before_fig(rem(105px), rem(2px), $yellow-color);
+        bottom: -12px;
+        left: rem(20px);
+      }
+    }
+    h4 {
+      font: 700 rem(13px)/1.3 $lato;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
 }

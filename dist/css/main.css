@@ -189,6 +189,15 @@ body {
   overflow: hidden;
   width: 100%; }
 
+.room_text {
+  color: #1c1c1c;
+  font: 700 1.125rem/1.8 "lato"; }
+
+.room_title-item {
+  color: #c89358;
+  font: 700 1.125rem/1.8 "lato";
+  text-transform: uppercase; }
+
 .contacts {
   display: flex;
   flex-direction: column; }
@@ -199,6 +208,66 @@ body {
     margin-bottom: 2.5rem; }
     .contacts a i {
       margin-right: 1.5625rem; }
+
+.deposit_card {
+  position: relative;
+  max-width: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.625rem;
+  transition: .4s; }
+  .deposit_card:hover {
+    transform: scale(1.1); }
+  .deposit_card .card_head {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-image: linear-gradient(-43deg, #cf941b 0%, #cf941b 1%, #dead50 16%, #f1cd66 30%, #ffee8a 46%, #ffffa4 57%, #eccf49 89%, #f3c557 100%), linear-gradient(-69deg, #05caf7 0%, #2962b2 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -5rem;
+    z-index: 1; }
+    .deposit_card .card_head p {
+      color: #333333;
+      font: 700 0.8125rem/2 "lato";
+      text-transform: uppercase; }
+    .deposit_card .card_head h3 {
+      color: #000000;
+      font: 700 1.3125rem "lato";
+      letter-spacing: 0.05875rem;
+      margin-bottom: 0; }
+  .deposit_card .card_content {
+    padding: 5.625rem 0.625rem 1.25rem;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    box-shadow: -0.75rem 1.4375rem 4.25rem rgba(0, 0, 0, 0.06); }
+    .deposit_card .card_content p {
+      position: relative;
+      text-align: center;
+      font: 300 0.8125rem/1.3 "lato";
+      text-transform: uppercase;
+      margin-bottom: 1.5625rem; }
+      .deposit_card .card_content p:nth-child(4) {
+        color: #bc773f; }
+      .deposit_card .card_content p::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 6.5625rem;
+        height: 0.125rem;
+        background-color: #ffdc54;
+        bottom: -12px;
+        left: 1.25rem; }
+    .deposit_card .card_content h4 {
+      font: 700 0.8125rem/1.3 "lato";
+      text-transform: uppercase;
+      text-align: center; }
 
 @font-face {
   /*Lato-Bold*/
@@ -482,65 +551,37 @@ body {
   background-color: #f9f9f9; }
   .deposit .deposit_wrap {
     width: 100%;
-    padding: 15rem 0.625rem 8.75rem;
+    padding: 21.25rem 0.625rem 8.75rem;
     display: flex; }
-    .deposit .deposit_wrap .deposit_elem {
-      position: relative;
-      max-width: 20%;
-      width: 20%;
-      margin-right: 1.25rem;
-      background-color: #fff; }
-      .deposit .deposit_wrap .deposit_elem:last-child {
-        margin-right: 0;
-        height: 550px; }
-      .deposit .deposit_wrap .deposit_elem:first-child {
-        height: 550px; }
-      .deposit .deposit_wrap .deposit_elem .deposit_head {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: -9.375rem;
-        z-index: 1;
+    .deposit .deposit_wrap .deposit_card {
+      max-width: 22.1875rem;
+      width: 100%;
+      margin-right: 1.25rem; }
+      .deposit .deposit_wrap .deposit_card .card_head {
         width: 100%;
         height: 22.25rem;
-        border-radius: 50%;
-        background-image: linear-gradient(to top, #fddd65 0%, #fff9b0 28%, #fee273 43%, #f8d151 48%, #fddf6c 53%, #fff9b0 78%, #f8d04f 98%, #f8d04f 100%), linear-gradient(-69deg, #05caf7 0%, #2962b2 100%); }
-        .deposit .deposit_wrap .deposit_elem .deposit_head p {
-          color: #333333;
-          text-transform: uppercase;
-          letter-spacing: 0.0375rem;
+        top: -12.5rem; }
+        .deposit .deposit_wrap .deposit_card .card_head p {
           font: 400 1.875rem/1.8 "Lato - Black"; }
-        .deposit .deposit_wrap .deposit_elem .deposit_head h3 {
+        .deposit .deposit_wrap .deposit_card .card_head h3 {
           letter-spacing: 0.05875rem;
           font: 700 2.9375rem/1.8 "lato"; }
-      .deposit .deposit_wrap .deposit_elem .deposit_content {
-        padding: 15rem 2.5rem 3.125rem;
-        width: 100%;
-        height: auto; }
-        .deposit .deposit_wrap .deposit_elem .deposit_content p {
-          text-align: center;
-          color: #1c1c1c;
-          text-transform: uppercase;
-          font: 300 1.0625rem/1.2 "lato";
-          margin-bottom: 3.125rem;
-          position: relative; }
-          .deposit .deposit_wrap .deposit_elem .deposit_content p:nth-child(4) {
-            color: #bc773f;
-            font-weight: 700; }
-          .deposit .deposit_wrap .deposit_elem .deposit_content p::before {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 0.125rem;
-            background-color: #ffdc54;
-            bottom: -1.5625rem; }
-        .deposit .deposit_wrap .deposit_elem .deposit_content h4 {
-          text-align: center;
-          text-transform: uppercase;
-          font: 700 1.0625rem/1.2 "lato"; }
+    .deposit .deposit_wrap .deposit_content {
+      padding: 15rem 2.5rem 3.75rem 3.125rem;
+      width: 100%; }
+      .deposit .deposit_wrap .deposit_content p {
+        font: 300 1.0625rem/1.2 "lato";
+        margin-bottom: 3.125rem; }
+        .deposit .deposit_wrap .deposit_content p::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 0.125rem;
+          background-color: #ffdc54;
+          bottom: -1.5625rem; }
+      .deposit .deposit_wrap .deposit_content h4 {
+        font: 700 1.0625rem/1.2 "lato"; }
 
 .deposit_increase {
   width: 100%;
@@ -1769,6 +1810,122 @@ body {
               flex: 1 1 9.0625rem;
               margin-right: 0; }
 
+.room .room_container .room_content .right_content .abnormal {
+  width: 100%;
+  position: relative; }
+  .room .room_container .room_content .right_content .abnormal .abnormal_link {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 50rem;
+    width: 100%; }
+    .room .room_container .room_content .right_content .abnormal .abnormal_link .link_elem {
+      max-width: 23.875rem;
+      width: 100%; }
+      .room .room_container .room_content .right_content .abnormal .abnormal_link .link_elem .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 3.4375rem;
+        border: 0.0625rem solid #cccccc;
+        background-color: #ffffff;
+        color: #1c1c1c;
+        font: 400 1.125rem/1.8 "lato";
+        text-align: center; }
+  .room .room_container .room_content .right_content .abnormal h3 {
+    margin-top: 2.5rem;
+    color: #c89358;
+    text-transform: uppercase; }
+
+.room .room_container .room_content .right_content .abnormal_menu {
+  margin-top: 1.5625rem;
+  position: relative;
+  width: 100%;
+  margin-bottom: 3.75rem; }
+  .room .room_container .room_content .right_content .abnormal_menu ul {
+    display: flex; }
+    .room .room_container .room_content .right_content .abnormal_menu ul li {
+      color: #ffffff;
+      font: 400 1/pxrem "lato";
+      height: 3.4375rem;
+      background-color: #434343;
+      margin-right: 0.1875rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .room .room_container .room_content .right_content .abnormal_menu ul li:first-child {
+        flex: 1 1 11.6875rem; }
+      .room .room_container .room_content .right_content .abnormal_menu ul li:nth-child(2) {
+        flex: 1 1 11.0625rem; }
+      .room .room_container .room_content .right_content .abnormal_menu ul li:nth-child(3) {
+        flex: 1 1 16.0625rem; }
+      .room .room_container .room_content .right_content .abnormal_menu ul li:nth-child(4) {
+        flex: 1 1 8.75rem; }
+      .room .room_container .room_content .right_content .abnormal_menu ul li:last-child {
+        flex: 1 1 8.75rem;
+        margin-right: 0; }
+
+.room .room_container .room_content .right_content .abnormal_banner {
+  position: relative;
+  width: 100%; }
+  .room .room_container .room_content .right_content .abnormal_banner p {
+    font-weight: 400;
+    margin-bottom: 1.25rem; }
+  .room .room_container .room_content .right_content .abnormal_banner .banner {
+    max-width: 45.625rem;
+    width: 100%;
+    margin-bottom: 1.875rem; }
+    .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem {
+      width: 100%;
+      position: relative; }
+      .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .big_banner_img {
+        max-width: 45.625rem;
+        width: 100%;
+        height: 5.625rem;
+        overflow: hidden; }
+        .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .big_banner_img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .average_banner_img {
+        max-width: 29.3125rem;
+        width: 100%;
+        overflow: hidden; }
+        .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .average_banner_img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .small_banner_img {
+        max-width: 7.8125rem;
+        width: 100%;
+        height: 7.8125rem; }
+        .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .small_banner_img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .banner_link {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.25rem; }
+        .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .banner_link .banner_link-img {
+          max-width: 29.375rem;
+          width: 100%;
+          overflow: hidden;
+          height: 5rem; }
+          .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .banner_link .banner_link-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .room .room_container .room_content .right_content .abnormal_banner .banner .banner_elem .banner_link .btn_main {
+          max-width: 14.375rem;
+          width: 100%;
+          cursor: pointer; }
+
 .registration {
   width: 100%;
   position: relative;
@@ -1837,5 +1994,78 @@ body {
             align-self: center; }
           .registration .room_container .registration_content .container_form .registration-form form .btn_main {
             align-self: center; }
+
+.room .room_container .room_content .right_content .room_tabs {
+  width: 100%;
+  position: relative; }
+  .room .room_container .room_content .right_content .room_tabs .tabs_head {
+    width: 100%;
+    position: relative;
+    display: flex; }
+    .room .room_container .room_content .right_content .room_tabs .tabs_head button {
+      width: 25%;
+      height: 3.4375rem;
+      color: #1c1c1c;
+      font: 700 1rem "lato";
+      text-transform: uppercase;
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: .4s;
+      border-bottom: 0.4375rem solid #434343; }
+      .room .room_container .room_content .right_content .room_tabs .tabs_head button:hover {
+        color: #ffffff;
+        background-color: #434343; }
+  .room .room_container .room_content .right_content .room_tabs .tabs_content {
+    width: 100%;
+    position: relative; }
+    .room .room_container .room_content .right_content .room_tabs .tabs_content h3 {
+      margin-bottom: 1.875rem; }
+    .room .room_container .room_content .right_content .room_tabs .tabs_content p {
+      font-weight: 300; }
+
+.room .room_container .room_content .right_content .room_tabs .tabs_content .operations {
+  width: 100%;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 4.0625rem 2.5rem 5rem 1.5625rem; }
+  .room .room_container .room_content .right_content .room_tabs .tabs_content .operations .deposit_content {
+    width: 100%;
+    position: relative;
+    margin-top: 6.25rem;
+    display: flex; }
+  .room .room_container .room_content .right_content .room_tabs .tabs_content .operations .deposit_contribution {
+    margin-top: 4.375rem;
+    width: 100%;
+    position: relative; }
+    .room .room_container .room_content .right_content .room_tabs .tabs_content .operations .deposit_contribution h2 {
+      color: #1c1c1c;
+      font: 700 1rem/2 "lato";
+      margin-bottom: 1.25rem; }
+    .room .room_container .room_content .right_content .room_tabs .tabs_content .operations .deposit_contribution form .deposit_inp {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem; }
+      .room .room_container .room_content .right_content .room_tabs .tabs_content .operations .deposit_contribution form .deposit_inp input {
+        max-width: 26.5rem;
+        width: 100%;
+        height: 2.8125rem;
+        border-radius: 1.4375rem;
+        border: 0.0625rem solid #cecece;
+        background-color: #fafafa;
+        color: #1c1c1c;
+        font: 300 1.125rem "lato";
+        letter-spacing: 0.0225rem;
+        padding-left: 1.875rem; }
+      .room .room_container .room_content .right_content .room_tabs .tabs_content .operations .deposit_contribution form .deposit_inp p {
+        font: 300 1.125rem "lato";
+        margin-left: 1.25rem;
+        text-transform: uppercase; }
+    .room .room_container .room_content .right_content .room_tabs .tabs_content .operations .deposit_contribution form .btn_main {
+      max-width: 13.75rem;
+      width: 100%; }
 
 /*# sourceMappingURL=main.css.map*/

@@ -1,0 +1,64 @@
+.room {
+  .room_container {
+    .room_content {
+      .right_content {
+        .room_tabs {
+          .tabs_content {
+            .operations {
+              width: 100%;
+              position: relative;
+              background-color: #f6f6f6;
+              padding: rem(65px) rem(40px) rem(80px) rem(25px);
+              .deposit_content {
+                width: 100%;
+                position: relative;
+                margin-top: rem(100px);
+                display: flex;
+              }
+              .deposit_contribution {
+                margin-top: rem(70px);
+                width: 100%;
+                position: relative;
+                h2 {
+                  color: #1c1c1c;
+                  font: 700 rem(16px)/2 $lato;
+                  margin-bottom: rem(20px);
+                }
+                form {
+
+                  .deposit_inp {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: rem(40px);
+                    input {
+                      max-width: rem(424px);
+                      width: 100%;
+                      height: rem(45px);
+                      border-radius: rem(23px);
+                      border: rem(1px) solid #cecece;
+                      background-color: #fafafa;
+                      color: #1c1c1c;
+                      font: 300 rem(18px) $lato;
+                      letter-spacing: rem(0.36px);
+                      padding-left: rem(30px);
+                    }
+                    p {
+                      font: 300 rem(18px) $lato;
+                      margin-left: rem(20px);
+                      text-transform: uppercase;
+                    }
+
+                  }
+                  .btn_main {
+                    max-width: rem(220px);
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
