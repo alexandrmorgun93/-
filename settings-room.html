@@ -59,8 +59,40 @@
                         <button>сменить пароль</button>
                     </div>
                     <div class="tabs_content">
-                        <h3 class="room_title-item">Личные параметры</h3>
-                        <p class="room_text">Перед началом работы Вы должны задать свои личные параметры</p>
+                        <div class="personal_settings">
+                            <h3 class="room_title-item">Личные параметры</h3>
+                            <p class="room_text_item">Перед началом работы Вы должны задать свои личные параметры</p>
+                            <form action="" class="personal_form">
+                                <div class="personal_form-left">
+                                    <p class="room_text">Ваши ФИО*:</p>
+                                    <input type="text" placeholder="Иван" required>
+                                    <p class="room_text-item">Ваши e-mail:<span>ivangeroy@gmail.com</span></p>
+                                    <p class="room_text-item text_item-elem"><b class="room_text">Ваш номер телефона*</b>(в
+                                        международном формате):</p>
+                                    <input type="text" placeholder="380689799787" required>
+                                    <p class="room_text">Ваш часовой пояс*(от GMT):</p>
+                                    <div class="clock_form">
+                                        <input class="form_clock-item" type="text" placeholder="+0:00" required>
+                                        <p class="room_text-item">+4:00 = Москва</p>
+                                    </div>
+                                    <div class="notReceive">
+                                        <p class="room_text-item">Не получать оповещания на e-mail</p>
+                                        <input class="notReceive_inp" type="radio">
+                                    </div>
+                                </div>
+                                <div class="personal_form-right">
+                                    <h3 class="room_text">Google Authenticator</h3>
+                                    <p class="room_text-item">Для активации <a href="#">Google Authenticator</a>
+                                        используйте ключ:</p>
+                                    <p class="room_text-item">SRGFHYUHHHU</p>
+                                    <div class="personal_img">
+                                        <img src="img/qr-form.png" alt="">
+                                    </div>
+                                    <p class="room_text-item">И введите код из приложения:</p>
+                                    <input type="text">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -77,17 +77,24 @@ body {
 }
 
 .btn_main {
-  max-width: rem(168px);
-  width: 100%;
+  width: rem(168px);
   height: rem(45px);
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: rem(-2px) rem(4px) rem(3px) rgba(0, 0, 0, 0.26);
   border-radius: rem(23px);
-  background-color: #eb5255;
-  background-image: linear-gradient(to top, #676869 0%, #676869 1%, #8c8d8f 17%, #c1c1c2 36%, #faf8f5 54%, #ebeae9 67%, #dcdcdc 74%, #b5b6b7 100%);
+  background-image: linear-gradient(to bottom, #676869 0%, #676869 1%, #8c8d8f 17%, #c1c1c2 36%, #faf8f5 54%, #ebeae9 67%, #dcdcdc 74%, #b5b6b7 100%);
   opacity: 0.92;
+  span {
+    background-image: linear-gradient(to top, #676869 0%, #676869 1%, #8c8d8f 17%, #c1c1c2 36%, #faf8f5 54%, #ebeae9 67%, #dcdcdc 74%, #b5b6b7 100%);
+    margin: rem(3px);
+    width: rem(162px);
+    height: rem(39px);
+    border-radius: rem(23px);
+    text-align: center;
+    line-height: 42px;
+  }
 }
 
 .leader_title_item {
@@ -101,13 +108,21 @@ body {
   width: rem(194px);
   height: rem(45px);
   box-shadow: rem(-2px) rem(4px) rem(3px) rgba(111, 79, 17, 0.26);
-  border-radius: 23px;
   display: flex;
+  border-radius: rem(23px);
   justify-content: center;
   align-items: center;
-  background-color: #eb5255;
-  background-image: linear-gradient(to top, #cf941b 0%, #cf941b 1%, #dead50 16%, #f1cd66 30%, #ffee8a 46%, #ffffa4 57%, #eccf49 89%, #f3c557 100%);
+  background-image: linear-gradient(to bottom, #cf941b 0%, #cf941b 1%, #dead50 16%, #f1cd66 30%, #ffee8a 46%, #ffffa4 57%, #eccf49 89%, #f3c557 100%);
   opacity: 0.92;
+  span {
+    background-image: linear-gradient(to top, #cf941b 0%, #cf941b 1%, #dead50 16%, #f1cd66 30%, #ffee8a 46%, #ffffa4 57%, #eccf49 89%, #f3c557 100%);
+    width: rem(188px);
+    height: rem(39px);
+    border-radius: rem(23px);
+    margin: rem(3px);
+    text-align: center;
+    line-height: 39px;
+  }
 }
 
 .main_title {
@@ -115,7 +130,7 @@ body {
   text-align: center;
   color: #1c1c1c;
   text-transform: uppercase;
-  font: 400 rem(48px)/1.5 $proxima;
+  font: 400 rem(48px)/1.5 "Proxima Nova - Extrabld";
   letter-spacing: 0.32px;
   position: relative;
   display: block;
@@ -154,15 +169,33 @@ body {
   width: 100%;
 }
 
+.calculator_title {
+  text-transform: uppercase;
+  font: 400 rem(30px)/1.1 "Proxima Nova - Extrabld";
+  margin-bottom: rem(50px);
+}
+
 .room_text {
   color: #1c1c1c;
   font: 700 rem(18px)/1.8 $lato;
 }
-
+.room_text-item{
+  color: #1c1c1c;
+  font: 300 rem(18px)/1.8 $lato;
+}
 .room_title-item {
   color: #c89358;
   font: 700 rem(18px)/1.8 $lato;
   text-transform: uppercase;
+}
+
+.calculator_text {
+  color: #1c1c1c;
+  font: 300 rem(20)/1.7 $lato;
+  margin-bottom: rem(50px);
+  span {
+    font: 700 rem(30px) $lato;
+  }
 }
 
 //social

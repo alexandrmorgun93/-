@@ -10,6 +10,7 @@
             width: 100%;
             position: relative;
             display: flex;
+            margin-bottom: rem(30px);
             button {
               width: 25%;
               height: rem(55px);
@@ -34,11 +35,78 @@
           .tabs_content {
             width: 100%;
             position: relative;
-            h3 {
-              margin-bottom: rem(30px);
+            .personal_settings {
+
             }
-            p {
-              font-weight: 300;
+            .personal_form {
+              display: flex;
+              justify-content: space-between;
+              .personal_form-left {
+                max-width: rem(384px);
+                width: 100%;
+                input {
+                  width: 100%;
+                  border-radius: rem(23px);
+                  height: rem(45px);
+                  background-color: #fafafa;
+                  display: flex;
+                  align-items: center;
+                  padding-left: rem(30px);
+                  font: 300 rem(18px) $lato;
+                  border: none;
+                  margin: rem(20px) 0 rem(25px);
+                  border: 1px solid #cecece;
+                }
+
+                p {
+                  span {
+                    margin-left: rem(20px);
+                  }
+                }
+                .text_item-elem {
+                  max-width: rem(247px);
+                  margin-top: rem(45px);
+                }
+                .clock_form {
+                  display: flex;
+                  align-items: center;
+                  .form_clock-item {
+                    max-width: rem(117px);
+                    width: 100%;
+                    margin-right: rem(20px);
+                  }
+                }
+                .notReceive {
+                  display: flex;
+                  align-items: center;
+                  .notReceive_inp {
+                    width: rem(20px);
+                    height: rem(20px);
+                    border-radius: rem(50%);
+                    margin-left: rem(30px);
+                  }
+                }
+              }
+              .personal_form-right {
+                max-width: rem(320px);
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                h3 {
+
+                }
+                p {
+                  text-align: center;
+                  a {
+                    color: #bc773f;
+                    font-weight: 700;
+                    letter-spacing: 0.36px;
+                    text-decoration: underline;
+                  }
+                }
+              }
             }
           }
         }
