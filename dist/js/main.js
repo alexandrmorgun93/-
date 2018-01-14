@@ -83,6 +83,13 @@ let p = new Parallax('.parallax', {
 
 /*END PARALLAX*/
 
+let menu = document.querySelector('.menu_btn');
+let menuNuv = document.querySelector('.main_nav');
+menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuNuv.classList.toggle('active');
+});
+
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {

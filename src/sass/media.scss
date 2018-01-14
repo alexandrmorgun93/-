@@ -1,0 +1,238 @@
+//@media only screen and (max-width: 1920px) {
+//  html {
+//    font-size: 16px;
+//  }
+//}
+@media screen and (max-width: 1480px) {
+  //advantages
+  .advantages {
+    .advantages_wrap {
+      padding: 0 rem(10px);
+      .advantages_elem {
+        width: 48%;
+        &:nth-child(odd) {
+          margin-right: rem(10px);
+        }
+        .advantages_elem-wrap {
+          padding: rem(30px) rem(20px) 0 rem(150px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  //footer
+  .main_footer {
+    .footer_container {
+      .footer_content {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  //advantages
+  .advantages {
+    .advantages_wrap {
+      justify-content: center;
+      .advantages_elem {
+        width: 100%;
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  //header
+  .main_head {
+    .container {
+      .menu_btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: rem(1px) solid $yellow-color;
+        width: rem(40px);
+        height: rem(40px);
+      }
+      .nav_block {
+        .main_nav {
+          width: 100%;
+          position: absolute;
+          top: -150vh;
+          left: 0;
+          background-color: #fff;
+          z-index: 10;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          /* justify-content: center; */
+          text-align: center;
+          opacity: 0;
+          transition: .5s;
+          ul {
+            flex-direction: column;
+            justify-content: space-around;
+            li {
+              margin: 0;
+            }
+          }
+          &.active {
+            top: 0;
+            opacity: 1;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  //HEADER
+  .main_head {
+    .container {
+      .nav_block {
+        .head_entrance {
+          flex-direction: column;
+          p {
+            margin: 0;
+          }
+          //.form_reg {
+          //  margin-top: rem(20px);
+          //}
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  //footer
+  .main_footer {
+    .footer_container {
+      .footer_content {
+        .footer_text {
+          margin-bottom: rem(30px);
+        }
+        nav {
+          margin-right: rem(50px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  //reliability
+  .reliability {
+    .reliability_content {
+      padding: 0 rem(15px);
+      .reliability_elem {
+        max-width: none;
+        margin: 0 0 rem(30px) 0;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .news {
+    .news_container {
+      .new_elem {
+        header {
+          padding: rem(40px) 0;
+        }
+        .news_content {
+          padding: rem(20px);
+          article {
+            flex-direction: column;
+            justify-content: center;
+            h4 {
+              margin-bottom: rem(15px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  //footer
+  .main_footer {
+    .footer_container {
+      .footer_content {
+        .footer_text {
+          text-align: center;
+        }
+        nav {
+          text-align: center;
+          order: 1;
+          margin: 0;
+        }
+        .contacts_footer {
+          margin-bottom: rem(50px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  //advantages
+  .advantages {
+    .advantages_wrap {
+      .advantages_elem {
+        margin-bottom: rem(180px);
+        padding: 0;
+        .advantages_elem-wrap {
+          padding: rem(50px) rem(20px) 0;
+          .advantages_circle {
+            top: -50%;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  //reliability
+  .reliability {
+    .reliability_content {
+      .reliability_elem {
+        .reliability_head {
+          padding: rem(40px) 0;
+        }
+
+        .reliability_footer {
+          padding: rem(30px) rem(40px) rem(20px);
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  //reliability
+  .reliability {
+    .reliability_content {
+      .reliability_elem {
+        .reliability_footer {
+          padding: rem(10px);
+          text-align: center;
+        }
+      }
+    }
+  }
+}

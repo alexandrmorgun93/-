@@ -5,3 +5,10 @@ let p = new Parallax('.parallax', {
 }).init();
 
 /*END PARALLAX*/
+
+let menu = document.querySelector('.menu_btn');
+let menuNuv = document.querySelector('.main_nav');
+menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuNuv.classList.toggle('active');
+});
