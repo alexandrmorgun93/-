@@ -29,17 +29,8 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            input {
-              width: 100%;
-              height: rem(45px);
-              border-radius: rem(23px);
-              border: rem(1px) solid #cecece;
-              background-color: #fafafa;
+            input{
               margin-bottom: rem(25px);
-              color: #1c1c1c;
-              font: 300 rem(18px) $lato;
-              letter-spacing: rem(0.36px);
-              padding-left: rem(30px);
             }
             .feedback_check {
               display: flex;

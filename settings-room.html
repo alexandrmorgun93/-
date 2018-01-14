@@ -63,34 +63,92 @@
                             <h3 class="room_title-item">Личные параметры</h3>
                             <p class="room_text_item">Перед началом работы Вы должны задать свои личные параметры</p>
                             <form action="" class="personal_form">
-                                <div class="personal_form-left">
-                                    <p class="room_text">Ваши ФИО*:</p>
-                                    <input type="text" placeholder="Иван" required>
-                                    <p class="room_text-item">Ваши e-mail:<span>ivangeroy@gmail.com</span></p>
-                                    <p class="room_text-item text_item-elem"><b class="room_text">Ваш номер телефона*</b>(в
-                                        международном формате):</p>
-                                    <input type="text" placeholder="380689799787" required>
-                                    <p class="room_text">Ваш часовой пояс*(от GMT):</p>
-                                    <div class="clock_form">
-                                        <input class="form_clock-item" type="text" placeholder="+0:00" required>
-                                        <p class="room_text-item">+4:00 = Москва</p>
+                                <!--begin personal form-->
+                                <div class="personal_wrap">
+                                    <div class="personal_form-left">
+                                        <div class="form_name">
+                                            <p><b>Ваши ФИО*:</b></p>
+                                            <input class="feedback_inp" type="text" placeholder="Иван" required>
+                                        </div>
+                                        <div class="mail_form">
+                                            <p>Ваши e-mail:</p>
+                                            <p>ivangeroy@gmail.com</p>
+                                        </div>
+                                        <div class="phone_form">
+                                            <p><b>Ваш номер телефона*</b></p>
+                                            <p>(в международном формате):</p>
+                                            <input class="feedback_inp" type="text" placeholder="380689799787" required>
+                                        </div>
+                                        <div class="timezone_form">
+                                            <p><b>Ваш часовой пояс*(от GMT):</b></p>
+                                            <div class="timezone_form-elem">
+                                                <input class="feedback_inp" type="text" placeholder="+0:00">
+                                                <p>+4:00 = Москва</p>
+                                            </div>
+                                        </div>
+                                        <div class="notReceive_form">
+                                            <p>Не получать оповещания на e-mail</p>
+                                            <input type="radio">
+                                        </div>
                                     </div>
-                                    <div class="notReceive">
-                                        <p class="room_text-item">Не получать оповещания на e-mail</p>
-                                        <input class="notReceive_inp" type="radio">
+                                    <div class="personal_form-right">
+                                        <p><b>Google Authenticator</b></p>
+                                        <p>Для активации <a href="">Google Authenticator</a>используйте ключ:</p>
+                                        <p>SRGFHYUHHHU</p>
+                                        <div class="form-right_qr">
+                                            <img src="img/qr-form.png" alt="">
+                                        </div>
+                                        <p>И введите код из приложения:</p>
+                                        <input class="feedback_inp" type="text">
                                     </div>
                                 </div>
-                                <div class="personal_form-right">
-                                    <h3 class="room_text">Google Authenticator</h3>
-                                    <p class="room_text-item">Для активации <a href="#">Google Authenticator</a>
-                                        используйте ключ:</p>
-                                    <p class="room_text-item">SRGFHYUHHHU</p>
-                                    <div class="personal_img">
-                                        <img src="img/qr-form.png" alt="">
+                                <!--end personal form-->
+                                <!-- begin security form-->
+                                <div class="security_form">
+                                    <h3 class="room_title-item">безопасность</h3>
+                                    <div class="security_form-wrap">
+                                        <div class="security_left-form">
+                                            <p><b>Контроль смены IP-адреса:</b></p>
+                                            <select class="feedback_inp">
+                                                <option>- по умолчанию -</option>
+                                                <option>- по умолчанию -</option>
+                                            </select>
+                                            <div class="security_form-session">
+                                                <div class="session_elem">
+                                                    <p>Привязывать сессию к IP-адресу:</p>
+                                                    <input type="radio">
+                                                </div>
+                                                <div class="session_elem">
+                                                    <p>Запретить параллельные сессии:</p>
+                                                    <input type="radio">
+                                                </div>
+                                                <div class="autoExit">
+                                                    <p><b>Автовыход через:</b></p>
+                                                    <div class="autoExit_elem">
+                                                        <input class="feedback_inp" type="text" placeholder="0">
+                                                        <p>минут</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="security_right-form">
+                                            <div class="question-form">
+                                                <p><b>Контрольный вопрос*:</b></p>
+                                                <input class="feedback_inp" type="text" placeholder="кто это сделал"
+                                                       required>
+                                            </div>
+                                            <div class="answer-form">
+                                                <p><b>Контрольный ответ (заполните чтобы сменить):</b></p>
+                                                <div class="answer_elem">
+                                                    <input class="feedback_inp" type="text">
+                                                    <p>[задано]</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="room_text-item">И введите код из приложения:</p>
-                                    <input type="text">
                                 </div>
+                                <!-- end security form-->
+                                <button type="submit" class="btn_main">СОХРАНИТЬ</button>
                             </form>
                         </div>
                     </div>
