@@ -1,7 +1,7 @@
 .contacts_wrap {
   width: 100%;
   position: relative;
-  padding: rem(150px) 0 rem(130px);
+  padding: rem(150px) rem(15px) rem(130px);
   .contacts_info {
     max-width: rem(900px);
     width: 100%;
@@ -23,6 +23,16 @@
         font: 700 rem(30px) $proxima;
         text-transform: uppercase;
         margin-bottom: rem(60px);
+      }
+    }
+    .contacts_qr {
+      max-width: rem(370px);
+      width: 100%;
+      height: rem(387px);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }

@@ -51,7 +51,7 @@
         .form_reg {
           display: flex;
           margin-left: rem(35px);
-          button {
+          a {
             font: 700 rem(16px)/2.8 $lato;
             cursor: pointer;
           }
@@ -163,7 +163,7 @@
 .menu_btn {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;

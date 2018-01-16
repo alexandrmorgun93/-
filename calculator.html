@@ -84,27 +84,48 @@
         <div class="main_calculator_wrap">
             <div class="main_calculator">
                 <form class="calculator_form">
-                    <div class="calculator_form-left">
+                    <div class="calculator_form-elem">
                         <p>Депозит</p>
+                        <div class="right_form">
+                            <input class="calculator-inp" type="text" placeholder="10000">
+                            <p>USD</p>
+                        </div>
+                    </div>
+                    <div class="calculator_form-elem">
                         <p>Доход</p>
+                        <div class="right_form">
+                            <input class="calculator-inp" type="text" placeholder="20">
+                            <p>% в месяц</p>
+                        </div>
+                    </div>
+                    <div class="calculator_form-elem">
                         <p>Срок инвестирования</p>
+                        <div class="right_form">
+                            <input class="calculator-inp" type="text" placeholder="6">
+                            <p>месяцев</p>
+                        </div>
                     </div>
-                    <div class="calculator_form-right">
-                        <input type="text">
-                        <p>USD</p>
-                        <input type="text">
-                        <p>% в месяц</p>
-                        <input type="text">
-                        <p>месяцев</p>
+                    <div class="calculator_form-elem">
+                        <p>пополнение счета</p>
+                        <select class="calculator-inp">
+                            <option>не предусмотрено</option>
+                            <option>предусмотрено</option>
+                        </select>
+                        <div class="right_form">
+                            <input class="calculator-inp" type="text" placeholder="0">
+                            <p>USD</p>
+                        </div>
                     </div>
-                    <p>пополнение счета</p>
+                    <button class="btn">РАССЧИТАТЬ ДОХОД</button>
                 </form>
             </div>
-            <p><span>Результаты расчёта</span></p>
-            <p>Стартовый капитал: 10000 USD</p>
-            <p>Всего инвестировано: 10000 USD</p>
-            <p>Доход: 12000 USD</p>
-            <p>Итоговый капитал: 22000 USD</p>
+            <div class="calculator_results">
+                <p><span>Результаты расчёта</span></p>
+                <p>Стартовый капитал: 10000 USD</p>
+                <p>Всего инвестировано: 10000 USD</p>
+                <p>Доход: 12000 USD</p>
+                <p>Итоговый капитал: 22000 USD</p>
+            </div>
             <div class="calculator_table">
                 <ul>
                     <li>Месяц</li>
@@ -258,17 +279,17 @@
             </nav>
             <div class="contacts_footer">
                 <div class="contacts">
-                    <a href="#"><i>$</i>21. Giles St., Belize City, Belize </a>
-                    <a href="#"><i>$</i>Blockchain Alliance</a>
-                    <a href="#"><i>$</i>support@blockchain-alliance.biz</a>
-                    <a href="#"><i>$</i>blockchain-alliance.biz</a>
+                    <a href="#"><i class="icon-maps-placeholder"></i>21. Giles St., Belize City, Belize </a>
+                    <a href="#"><i class="icon-skype"></i>Blockchain Alliance</a>
+                    <a href="#"><i class="icon-mail"></i>support@blockchain-alliance.biz</a>
+                    <a href="#"><i class="icon-world-wide-web"></i>blockchain-alliance.biz</a>
                 </div>
                 <div class="social_footer">
-                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-facebook-letter-logo"></i></a>
                     <a href="#"><i class="icon-twitter"></i></a>
-                    <a href="#"><i class="icon-gplus"></i></a>
-                    <a href="#"><i class="icon-instagram"></i></a>
-                    <a href="#"><i class="icon-vkontakte"></i></a>
+                    <a href="#"><i class="icon-google-plus-logo"></i></a>
+                    <a href="#"><i class="icon-instagram-logo"></i></a>
+                    <a href="#"><i class="icon-vk"></i></a>
                 </div>
             </div>
         </div>

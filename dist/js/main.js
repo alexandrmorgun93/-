@@ -84,11 +84,12 @@ let p = new Parallax('.parallax', {
 /*END PARALLAX*/
 
 let menu = document.querySelector('.menu_btn');
-let menuNuv = document.querySelector('.main_nav');
+let menuNuv = document.querySelector('.nav_block');
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
     menuNuv.classList.toggle('active');
 });
+
 
 /***/ }),
 /* 2 */

@@ -8,12 +8,14 @@
               width: 100%;
               position: relative;
               background-color: #f6f6f6;
-              padding: rem(65px) rem(40px) rem(80px) rem(25px);
+              padding: rem(65px) rem(20px) rem(80px) rem(20px);
               .deposit_content {
                 width: 100%;
                 position: relative;
                 margin-top: rem(100px);
                 display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
               }
               .deposit_contribution {
                 margin-top: rem(70px);

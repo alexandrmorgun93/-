@@ -8,7 +8,7 @@
       position: relative;
       box-shadow: -12px 23px 68px rgba(0, 0, 0, 0.06);
       background-color: #ffffff;
-      padding: rem(120px) 0;
+      padding: rem(120px) rem(15px);
       .container_form {
         display: flex;
         justify-content: space-between;
@@ -29,7 +29,7 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            input{
+            input {
               margin-bottom: rem(25px);
             }
             .feedback_check {

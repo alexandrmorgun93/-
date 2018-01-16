@@ -122,26 +122,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-twitter:before {
-  content: '\f099';
-}
 
-.icon-facebook:before {
-  content: '\f09a';
-}
-
-.icon-vkontakte:before {
-  content: '\f189';
-}
-
-.icon-gplus:before {
-  content: '\f30f';
-}
-
-.icon-instagram:before {
-  content: '\f32d';
-}
-
-.icon-skype:before {
-  content: '\f339';
-}
+.icon-camera:before { content: '\e802'; } /* '' */
+.icon-checked:before { content: '\e804'; } /* '' */
+.icon-close-button:before { content: '\e805'; } /* '' */
+.icon-cup:before { content: '\e806'; } /* '' */
+.icon-currency:before { content: '\e807'; } /* '' */
+.icon-diamond:before { content: '\e808'; } /* '' */
+.icon-discount:before { content: '\e809'; } /* '' */
+.icon-double-angle-right:before { content: '\e80a'; } /* '' */
+.icon-double-left-chevron:before { content: '\e80b'; } /* '' */
+.icon-emerald:before { content: '\e80c'; } /* '' */
+.icon-facebook-letter-logo:before { content: '\e80d'; } /* '' */
+.icon-folder:before { content: '\e80e'; } /* '' */
+.icon-forward-arrow:before { content: '\e80f'; } /* '' */
+.icon-google-plus-logo:before { content: '\e810'; } /* '' */
+.icon-instagram-logo:before { content: '\e811'; } /* '' */
+.icon-left-arrow:before { content: '\e812'; } /* '' */
+.icon-mail:before { content: '\e813'; } /* '' */
+.icon-maps-placeholder:before { content: '\e814'; } /* '' */
+.icon-message-closed:before { content: '\e815'; } /* '' */
+.icon-play-button:before { content: '\e816'; } /* '' */
+.icon-protected:before { content: '\e817'; } /* '' */
+.icon-right-arrow:before { content: '\e818'; } /* '' */
+.icon-right-arrow-two:before { content: '\e819'; } /* '' */
+.icon-settings-work-tool:before { content: '\e81a'; } /* '' */
+.icon-star:before { content: '\e81c'; } /* '' */
+.icon-tick:before { content: '\e81d'; } /* '' */
+.icon-twitter:before { content: '\e81e'; } /* '' */
+.icon-user-male:before { content: '\e81f'; } /* '' */
+.icon-users:before { content: '\e820'; } /* '' */
+.icon-vk:before { content: '\e821'; } /* '' */
+.icon-world-wide-web:before { content: '\e822'; } /* '' */
+.icon-arrow-point-to-right:before { content: '\e823'; } /* '' */
+.icon-bag:before { content: '\e824'; } /* '' */
+.icon-calculator:before { content: '\e825'; } /* '' */
+.icon-calendar:before { content: '\e826'; } /* '' */
+.icon-skype:before { content: '\f339'; } /* '' */

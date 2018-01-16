@@ -53,10 +53,29 @@
           justify-content: center;
           align-items: center;
           i {
-            font-size: rem(50px);
+            font-size: rem(100px);
+            &::before {
+              display: inline;
+              background: -webkit-gradient(linear, left bottom, left top, from(#683500), color-stop(10%, #9f5c02), color-stop(22%, #f7bb63), color-stop(37%, #db9d4e), color-stop(53%, #935e1f), color-stop(78%, #e8aa55), color-stop(92%, #945d25), to(#945d25));
+              background: linear-gradient(0deg, #683500 0, #9f5c02 10%, #f7bb63 22%, #db9d4e 37%, #935e1f 53%, #e8aa55 78%, #945d25 92%, #945d25);
+              -webkit-background-clip: text;
+              font-size: 6.25rem;
+              line-height: 1;
+              -webkit-text-fill-color: transparent;
+            }
           }
         }
       }
     }
   }
+}
+
+.advantage_elem .advantage_elem_icon i:before {
+  display: inline;
+  background: -webkit-gradient(linear, left bottom, left top, from(#683500), color-stop(10%, #9f5c02), color-stop(22%, #f7bb63), color-stop(37%, #db9d4e), color-stop(53%, #935e1f), color-stop(78%, #e8aa55), color-stop(92%, #945d25), to(#945d25));
+  background: linear-gradient(0deg, #683500 0, #9f5c02 10%, #f7bb63 22%, #db9d4e 37%, #935e1f 53%, #e8aa55 78%, #945d25 92%, #945d25);
+  -webkit-background-clip: text;
+  font-size: 6.25rem;
+  line-height: 1;
+  -webkit-text-fill-color: transparent;
 }

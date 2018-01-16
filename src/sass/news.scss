@@ -94,7 +94,7 @@
     position: relative;
     .new_block {
       width: 100%;
-      padding: rem(100px) 0 rem(120px);
+      padding: rem(100px) rem(10px) rem(120px);
       position: relative;
       border-bottom: rem(15px) solid #e1e1e1;
       .article_elem_wrap {
@@ -114,7 +114,7 @@
           justify-content: space-between;
           .article_img {
             max-width: rem(400px);
-            width: 100%;
+            width: 41%;
             height: rem(342px);
             img {
               width: 100%;
@@ -127,6 +127,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            p {
+              max-height: rem(200px);
+              overflow: hidden;
+            }
             .btn_main {
               align-self: flex-end;
 
@@ -139,7 +143,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      margin: rem(100px) 0 rem(150px);
+      margin: rem(100px) 0 rem(150px) rem(50px);
 
       a {
         color: #1c1c1c;

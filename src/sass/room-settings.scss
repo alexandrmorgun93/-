@@ -36,170 +36,168 @@
             width: 100%;
             position: relative;
             .personal_settings {
-
-            }
-
-            .personal_form {
-              position: relative;
-              margin-top: rem(50px);
-              .personal_wrap {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: rem(100px);
-                p {
-                  color: #1c1c1c;
-                  font: 300 rem(18px)/1.8 $lato;
-                }
-                input {
-                  margin-top: rem(10px);
-                }
-                .personal_form-left {
-                  max-width: rem(385px);
-                  width: 100%;
-                  margin-left: rem(80px);
-                  .form_name {
-                    margin-bottom: rem(20px);
-                  }
-                  .mail_form {
-                    margin-bottom: rem(35px);
-                    display: flex;
-                    p {
-                      margin-right: rem(10px);
-                    }
-                  }
-                  .phone_form {
-                    margin-bottom: rem(35px);
-                  }
-                  .timezone_form {
-                    margin-bottom: rem(40px);
-                    .timezone_form-elem {
-                      display: flex;
-                      align-items: center;
-                      input {
-                        max-width: rem(117px);
-                        margin-right: rem(20px);
-                      }
-                    }
-                  }
-                  .notReceive_form {
-                    display: flex;
-                    align-items: center;
-                    input {
-                      margin-top: 0;
-                      width: rem(21px);
-                      height: rem(21px);
-                      margin-left: rem(25px);
-                    }
-                  }
-                }
-                .personal_form-right {
-                  max-width: rem(330px);
-                  width: 100%;
-                  position: relative;
+              .personal_form {
+                position: relative;
+                margin-top: rem(50px);
+                .personal_wrap {
                   display: flex;
-                  flex-direction: column;
-                  align-items: center;
+                  margin-bottom: rem(100px);
                   p {
-                    text-align: center;
-                    a {
-                      color: #bc773f;
-                      font-weight: 700;
-                      letter-spacing: 0.36px;
-                      text-decoration: underline;
-                      margin: 0 rem(5px);
-                    }
-                    &:first-child {
-                      margin-bottom: rem(30px);
-                    }
-                    &:nth-child(2) {
-                      margin-bottom: rem(30px);
-                    }
-                  }
-                  .form-right_qr {
-                    width: rem(187px);
-                    height: rem(188px);
-                    margin-bottom: rem(30px);
-                    img {
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                    }
+                    color: #1c1c1c;
+                    font: 300 rem(18px)/1.8 $lato;
                   }
                   input {
-                    max-width: rem(308px);
+                    margin-top: rem(10px);
                   }
-                }
-              }
-              .security_form {
-                width: 100%;
-                position: relative;
-                h3 {
-                  margin-bottom: rem(60px);
-                }
-                p {
-                  color: #1c1c1c;
-                  font: 300 rem(18px)/1.8 $lato;
-                }
-                .security_form-wrap {
-                  display: flex;
-                  justify-content: space-between;
-                  .security_left-form {
-                    width: rem(384px);
-                    margin-left: rem(80px);
-                    select {
-                      margin-bottom: rem(40px);
-                      &:focus {
-                        outline: 0;
-                      }
+                  .personal_form-left {
+                    max-width: rem(385px);
+                    width: 100%;
+                    margin-right: rem(100px);
+                    .form_name {
+                      margin-bottom: rem(20px);
                     }
-                    .session_elem {
+                    .mail_form {
+                      margin-bottom: rem(35px);
                       display: flex;
-                      align-items: center;
-                      &:nth-child(2) {
-                        margin-bottom: rem(25px);
-                      }
-                      input {
-                        width: rem(21px);
-                        height: rem(21px);
-                        margin-left: rem(20px);
+                      p {
+                        margin-right: rem(10px);
                       }
                     }
-                    .autoExit {
-                      .autoExit_elem {
-                        display: flex;
-                        align-items: center;
-                        margin-top: rem(20px);
-                        input {
-                          width: rem(186px);
-                          margin-right: rem(30px);
-                        }
-                      }
-                    }
-                  }
-                  .security_right-form {
-                    width: rem(330px);
-                    .question-form {
+                    .phone_form {
                       margin-bottom: rem(35px);
                     }
-                    .answer-form {
-                      p {
-                        line-height: rem(24px);
-                      }
-                      .answer_elem {
+                    .timezone_form {
+                      margin-bottom: rem(40px);
+                      .timezone_form-elem {
                         display: flex;
                         align-items: center;
-                        margin-top: rem(20px);
                         input {
-                          width: rem(186px);
+                          max-width: rem(117px);
                           margin-right: rem(20px);
                         }
                       }
                     }
+                    .notReceive_form {
+                      display: flex;
+                      align-items: center;
+                      input {
+                        margin-top: 0;
+                        width: rem(21px);
+                        height: rem(21px);
+                        margin-left: rem(25px);
+                      }
+                    }
+                  }
+                  .personal_form-right {
+                    max-width: rem(330px);
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    p {
+                      text-align: center;
+                      a {
+                        color: #bc773f;
+                        font-weight: 700;
+                        letter-spacing: 0.36px;
+                        text-decoration: underline;
+                        margin: 0 rem(5px);
+                      }
+                      &:first-child {
+                        margin-bottom: rem(30px);
+                      }
+                      &:nth-child(2) {
+                        margin-bottom: rem(30px);
+                      }
+                    }
+                    .form-right_qr {
+                      width: rem(187px);
+                      height: rem(188px);
+                      margin-bottom: rem(30px);
+                      img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                      }
+                    }
+                    input {
+                      max-width: rem(308px);
+                    }
                   }
                 }
-              }
-              .btn_main {
-                margin-top: rem(100px);
+                .security_form {
+                  width: 100%;
+                  position: relative;
+                  h3 {
+                    margin-bottom: rem(60px);
+                  }
+                  p {
+                    color: #1c1c1c;
+                    font: 300 rem(18px)/1.8 $lato;
+                  }
+                  .security_form-wrap {
+                    display: flex;
+                    .security_left-form {
+                      max-width: rem(384px);
+                      width: 100%;
+                      margin-right: rem(100px);
+                      select {
+                        margin-bottom: rem(40px);
+
+                        &:focus {
+                          outline: 0;
+                        }
+                      }
+                      .session_elem {
+                        display: flex;
+                        align-items: center;
+                        &:nth-child(2) {
+                          margin-bottom: rem(25px);
+                        }
+                        input {
+                          width: rem(21px);
+                          height: rem(21px);
+                          margin-left: rem(20px);
+                        }
+                      }
+                      .autoExit {
+                        .autoExit_elem {
+                          display: flex;
+                          align-items: center;
+                          margin-top: rem(20px);
+                          input {
+                            width: rem(186px);
+                            margin-right: rem(30px);
+                          }
+                        }
+                      }
+                    }
+                    .security_right-form {
+                      width: rem(330px);
+                      .question-form {
+                        margin-bottom: rem(35px);
+                      }
+                      .answer-form {
+                        p {
+                          line-height: rem(24px);
+                        }
+                        .answer_elem {
+                          display: flex;
+                          align-items: center;
+                          margin-top: rem(20px);
+                          input {
+                            width: rem(186px);
+                            margin-right: rem(20px);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .btn_main {
+                  margin-top: rem(100px);
+                }
               }
             }
           }

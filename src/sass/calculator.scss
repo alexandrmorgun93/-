@@ -112,25 +112,49 @@
       width: 100%;
       position: relative;
       display: flex;
-      justify-content: space-between;
-      .calculator_form-left {
+      flex-direction: column;
+      .calculator_form-elem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: rem(50px);
+        margin-bottom: rem(30px);
         p {
           color: #ffffff;
           text-transform: uppercase;
-          font: 700 rem(24px)/3 $proxima;
+          font: 700 rem(24px)/1 $proxima;
           letter-spacing: 0.48px;
         }
+        select {
+          max-width: rem(244px);
+        }
+        .right_form {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          max-width: rem(400px);
+          p {
+            font-family: $lato;
+          }
+        }
+      }
+      .btn {
+        max-width: rem(280px);
+        align-self: center;
+        margin-top: rem(20px);
       }
     }
   }
-  p {
-    color: #1c1c1c;
-    font: 700 rem(20px) $proxima;
-    letter-spacing: rem(0.48px);
-    margin-bottom: rem(25px);
-    span {
-      text-transform: uppercase;
-      font-size: rem(24px);
+  .calculator_results {
+    p {
+      color: #1c1c1c;
+      font: 700 rem(20px) $proxima;
+      letter-spacing: rem(0.48px);
+      margin-bottom: rem(25px);
+      span {
+        text-transform: uppercase;
+        font-size: rem(24px);
+      }
     }
   }
   .calculator_table {

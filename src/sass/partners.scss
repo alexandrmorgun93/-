@@ -25,7 +25,7 @@
     position: absolute;
     right: 0;
     max-width: rem(710px);
-    height: rem(360px);
+    height: auto;
     width: 35%;
     opacity: 0.9;
     img {
@@ -129,18 +129,6 @@
 .partners_leader {
   width: 100%;
   position: relative;
-  .partners_leader-img {
-    max-width: rem(740px);
-    width: 100%;
-    position: absolute;
-    right: rem(20px);
-    top: rem(200px);
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
   h2 {
     text-align: center;
     color: #1c1c1c;
@@ -171,18 +159,33 @@
         width: 100%;
       }
     }
+    .partners_leader-img {
+      max-width: rem(740px);
+      height: 740px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: calc(55% - 9.37rem);
+      z-index: -1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 
 .leader_second {
   width: 100%;
   position: relative;
-  margin-bottom: rem(150px);
+  //margin-bottom: rem(150px);
   .img_leader-second {
     max-width: rem(680px);
     width: 38%;
     position: absolute;
     right: 0;
+    top: rem(-150px);
     img {
       width: 100%;
       height: 100%;

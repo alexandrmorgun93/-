@@ -9,6 +9,7 @@ $devices: not-desktop phablets phones-tablets;
 $devices: not-desktop phablets phones-tablets;
 
 /*color*/
+$icons-color: linear-gradient(to top, #683500 0%, #9f5c02 10%, #f7bb63 22%, #db9d4e 37%, #935e1f 53%, #e8aa55 78%, #945d25 92%, #945d25 100%);
 $yllow-circle:linear-gradient(-43deg, #cf941b 0%, #cf941b 1%, #dead50 16%, #f1cd66 30%, #ffee8a 46%, #ffffa4 57%, #eccf49 89%, #f3c557 100%), linear-gradient(-69deg, #05caf7 0%, #2962b2 100%);
 $yellow-social:linear-gradient(to top, #cf941b 0%, #cf941b 1%, #dead50 16%, #f1cd66 30%, #ffee8a 46%, #ffffa4 57%, #eccf49 89%, #f3c557 100%);
 $grey-gradient:linear-gradient(to top, #656568 0%, #888a8c 11%, #dbdbdb 28%, #aaaaab 45%, #dadada 76%, #7f7f81 91%, #636465 100%);
