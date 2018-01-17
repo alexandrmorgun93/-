@@ -170,20 +170,23 @@
     .table {
       max-width: rem(1050px);
       width: 100%;
-      padding: rem(80px) rem(130px) rem(100px);
-      border: rem(15px) solid #bbbbbb;
-      background-color: #fff;
-      p {
-        font: 300 rem(20px)/1.75 $lato;
-        margin-bottom: rem(40px);
-        span {
-          font: 700 rem(30px) $lato;
-        }
-        &:last-child {
-          margin-bottom: 0;
+      padding: rem(20px);
+      background-image: linear-gradient(to top, #676869 0%, #676869 1%, #8c8d8f 17%, #c1c1c2 36%, #faf8f5 54%, #ebeae9 67%, #dcdcdc 74%, #b5b6b7 100%);
+      .table-gradient {
+        width: 100%;
+        padding: rem(80px) rem(130px) rem(100px);
+        background-color: #fff;
+        p {
+          font: 300 rem(20px)/1.75 $lato;
+          margin-bottom: rem(40px);
+          span {
+            font: 700 rem(30px) $lato;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
-
     }
   }
 }

@@ -57,6 +57,9 @@ abbr, acronym {
   content: '';
   clear: both; }
 
+html {
+  font-size: 0.8334vw; }
+
 body {
   font: 300 1.0625rem/1.7 "lato";
   letter-spacing: 0.025rem; }
@@ -860,8 +863,8 @@ textarea {
   padding: 6.25rem 0 3.75rem; }
   .investors .investors_img {
     max-width: 42.5625rem;
-    width: 100%;
-    height: 43.125rem;
+    width: 39%;
+    height: auto;
     position: absolute;
     right: 8.125rem; }
     .investors .investors_img img {
@@ -870,7 +873,11 @@ textarea {
       object-fit: cover; }
   .investors .container .investors_elem {
     width: 100%;
-    position: relative; }
+    position: relative;
+    padding-left: 0.9375rem;
+    background-color: #fff;
+    opacity: 0.9;
+    text-align: center; }
     .investors .container .investors_elem .investors_text {
       color: #1c1c1c;
       font: 300 1.25rem/1.7 "lato";
@@ -907,7 +914,7 @@ textarea {
   .investors_payments .payments_other {
     width: 100%;
     position: relative;
-    padding: 3.75rem 0 3.125rem;
+    padding: 3.75rem 0.9375rem 3.125rem;
     background-color: #f9f9f9; }
     .investors_payments .payments_other .partners_container {
       margin: auto; }
@@ -1108,27 +1115,34 @@ textarea {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     .partners_content .programs_container .partners_start_elem {
       max-width: 51.25rem;
       width: 100%;
-      padding: 6.875rem 5rem 8.75rem 7.1875rem;
-      border: 0.9375rem solid #d4d4d4;
-      margin-right: 1.875rem; }
-      .partners_content .programs_container .partners_start_elem:nth-child(2) {
-        padding: 4.6875rem 5.3125rem 7.5rem;
+      margin-right: 1.875rem;
+      padding: 1.25rem;
+      background-image: linear-gradient(to top, #676869 0%, #676869 1%, #8c8d8f 17%, #c1c1c2 36%, #faf8f5 54%, #ebeae9 67%, #dcdcdc 74%, #b5b6b7 100%);
+      display: block; }
+      .partners_content .programs_container .partners_start_elem:nth-child(2) .start_elem-gradient {
+        padding: 5rem 5.3125rem 7.5rem;
         margin-right: 0; }
-      .partners_content .programs_container .partners_start_elem .partners_coins-img {
-        max-width: 31.25rem;
-        height: 15rem;
-        margin-bottom: 1.875rem; }
-        .partners_content .programs_container .partners_start_elem .partners_coins-img img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-      .partners_content .programs_container .partners_start_elem .coins-img {
-        max-width: 36.25rem;
-        height: 21.875rem; }
+      .partners_content .programs_container .partners_start_elem .start_elem-gradient {
+        width: 100%;
+        height: 100%;
+        padding: 6.875rem 5rem 8.75rem 7.1875rem;
+        background-color: #fff; }
+        .partners_content .programs_container .partners_start_elem .start_elem-gradient .partners_coins-img {
+          max-width: 31.25rem;
+          height: 15rem;
+          margin-bottom: 1.875rem; }
+          .partners_content .programs_container .partners_start_elem .start_elem-gradient .partners_coins-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .partners_content .programs_container .partners_start_elem .start_elem-gradient .coins-img {
+          max-width: 36.25rem;
+          height: 21.875rem; }
 
 .effective_partners {
   margin-top: 11.25rem;
@@ -1215,10 +1229,12 @@ textarea {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-  .leader_second .container .leader {
-    background-color: #fff;
-    opacity: 0.9;
-    margin-bottom: 0; }
+  .leader_second .container {
+    padding: 0; }
+    .leader_second .container .leader {
+      background-color: #fff;
+      opacity: 0.9;
+      margin-bottom: 0; }
 
 .leader_third {
   width: 100%;
@@ -1233,14 +1249,17 @@ textarea {
 .partners_leader .fifty_leader {
   width: 100%;
   position: relative;
-  margin-bottom: 15.625rem; }
+  margin-bottom: 15.625rem;
+  background-color: #fff;
+  opacity: 0.9; }
   .partners_leader .fifty_leader .forty_leader-img {
     max-width: 29.375rem;
     width: 39%;
-    height: 26.875rem;
+    height: auto;
     position: absolute;
     right: 1.875rem;
-    top: 50%; }
+    top: 50%;
+    z-index: -1; }
     .partners_leader .fifty_leader .forty_leader-img img {
       position: relative;
       width: 100%;
@@ -1736,16 +1755,19 @@ textarea {
     .partners_table .table_container .table {
       max-width: 65.625rem;
       width: 100%;
-      padding: 5rem 8.125rem 6.25rem;
-      border: 0.9375rem solid #bbbbbb;
-      background-color: #fff; }
-      .partners_table .table_container .table p {
-        font: 300 1.25rem/1.75 "lato";
-        margin-bottom: 2.5rem; }
-        .partners_table .table_container .table p span {
-          font: 700 1.875rem "lato"; }
-        .partners_table .table_container .table p:last-child {
-          margin-bottom: 0; }
+      padding: 1.25rem;
+      background-image: linear-gradient(to top, #676869 0%, #676869 1%, #8c8d8f 17%, #c1c1c2 36%, #faf8f5 54%, #ebeae9 67%, #dcdcdc 74%, #b5b6b7 100%); }
+      .partners_table .table_container .table .table-gradient {
+        width: 100%;
+        padding: 5rem 8.125rem 6.25rem;
+        background-color: #fff; }
+        .partners_table .table_container .table .table-gradient p {
+          font: 300 1.25rem/1.75 "lato";
+          margin-bottom: 2.5rem; }
+          .partners_table .table_container .table .table-gradient p span {
+            font: 700 1.875rem "lato"; }
+          .partners_table .table_container .table .table-gradient p:last-child {
+            margin-bottom: 0; }
 
 .faq {
   position: relative;
@@ -2441,11 +2463,10 @@ textarea {
   padding: 6.25rem 0 0; }
   .calculator_wrap .calculator_img {
     max-width: 47.125rem;
-    width: 100%;
-    height: 39.75rem;
+    width: 39%;
     position: absolute;
     right: 0;
-    top: 35%; }
+    top: 5%; }
     .calculator_wrap .calculator_img img {
       position: relative;
       width: 100%;
@@ -2458,11 +2479,11 @@ textarea {
     z-index: -1;
     max-width: 41.25rem;
     width: 100%;
-    height: 40rem;
+    height: auto;
     opacity: 0.23; }
   .calculator_wrap .third_img {
     max-width: 41.1875rem;
-    height: 70.5625rem;
+    height: auto;
     left: 0;
     right: auto;
     top: auto;
@@ -2473,6 +2494,7 @@ textarea {
     top: auto;
     left: auto;
     bottom: 0;
+    height: auto;
     right: 0;
     opacity: 0.23; }
   .calculator_wrap .container .calculator_left {
@@ -2493,11 +2515,12 @@ textarea {
       position: relative;
       max-width: 46.875rem;
       width: 100%;
-      padding-right: 6.25rem;
+      padding: 1.875rem 6.25rem 1.25rem 3.125rem;
+      opacity: 0.9;
       background-color: #fff; }
       .calculator_wrap .container .calculator_right .right_content .forty_img {
-        max-width: 11.875rem;
-        height: 11.875rem;
+        width: 11.875rem;
+        height: auto;
         left: auto;
         bottom: auto;
         right: -5rem; }
@@ -2512,16 +2535,17 @@ textarea {
       .calculator_wrap .container .calculator_right .calculator_right-data p {
         text-indent: 1.25rem; }
       .calculator_wrap .container .calculator_right .calculator_right-data .forty_img {
-        max-width: 11.875rem;
-        height: 11.875rem;
+        width: 11.875rem;
         left: auto;
         bottom: auto;
         top: auto;
+        height: auto;
         right: -5rem; }
 
 .main_calculator_wrap {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  padding: 0 0.9375rem; }
   .main_calculator_wrap .main_calculator {
     max-width: 75rem;
     padding: 8.125rem 4.375rem 3.125rem;
@@ -2622,6 +2646,14 @@ textarea {
             width: 0;
             height: 0; }
 
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 16px; } }
+
+@media screen and (max-width: 1669px) {
+  .partners_content .programs_container .partners_start_elem {
+    margin: 0 0 2.5rem 0; } }
+
 @media screen and (max-width: 1480px) {
   .advantages .advantages_wrap {
     padding: 0 0.625rem; }
@@ -2640,23 +2672,63 @@ textarea {
 @media screen and (max-width: 1280px) {
   textarea {
     min-width: auto; }
+  .effective_partners .effective_partners-img {
+    max-width: none;
+    width: 100%;
+    min-height: 21.875rem;
+    height: auto;
+    opacity: 0.2; }
+  .effective_partners .container .effective {
+    max-width: none; }
+    .effective_partners .container .effective p {
+      text-align: center; }
   .partners_leader h2 {
     font-size: 1.875rem; }
   .partners_leader .container {
     display: flex;
-    flex-direction: column;
-    padding: 0 1.25rem; }
+    flex-direction: column; }
     .partners_leader .container .leader {
       margin-bottom: 6.25rem;
       max-width: none;
-      text-align: center; }
+      text-align: center;
+      padding: 0 1.25rem; }
     .partners_leader .container .partners_leader-img {
       margin: 0 auto 6.25rem;
       position: relative;
       left: auto;
       height: auto; }
   .partners_leader .leader_second .img_leader-second {
-    top: 0; } }
+    top: 0; }
+  .security_content .security_content-img {
+    max-width: none;
+    width: 100%;
+    height: 900px;
+    top: 5%; }
+  .security_content .container .security_info {
+    max-width: none;
+    background-color: #fff;
+    opacity: 0.9;
+    text-align: center;
+    padding: 0 0.625rem; }
+  .partners_content .container .partners_start {
+    max-width: none; }
+    .partners_content .container .partners_start p {
+      text-align: center; }
+  .payments_content .payment_content_img {
+    opacity: 0.2; }
+  .payments_content .partners_container .payments_elem_wrap .payments_elem {
+    max-width: none;
+    opacity: 0.9;
+    padding: 2.5rem 0.9375rem 3.75rem; }
+  .payments_content .partners_container .payments_elem_wrap:first-child {
+    text-align: center; }
+  .calculator_wrap .container .calculator_left {
+    max-width: none;
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 2.5rem 1.875rem; }
+    .calculator_wrap .container .calculator_left p {
+      margin-bottom: 1.875rem; } }
 
 @media screen and (max-width: 1200px) {
   .advantages .advantages_wrap {
@@ -2766,7 +2838,24 @@ textarea {
     flex-direction: column;
     align-items: center; }
     .room .room_container .room_content .right_content .abnormal .abnormal_link .link_elem {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .security_content .container .coins_stage {
+    padding: 0 0.9375rem; }
+    .security_content .container .coins_stage .coins_stage-text {
+      flex-direction: column; }
+      .security_content .container .coins_stage .coins_stage-text p {
+        max-width: none;
+        text-align: center;
+        margin-bottom: 0.9375rem; }
+  .main_calculator_wrap .main_calculator {
+    padding: 5.625rem 0.625rem 3.125rem; }
+    .main_calculator_wrap .main_calculator .calculator_form .calculator_form-elem p {
+      font-size: 1.125rem; }
+    .main_calculator_wrap .main_calculator .calculator_form .calculator_form-elem select {
+      max-width: 12.5rem;
+      font-size: 0.75rem; }
+    .main_calculator_wrap .main_calculator .calculator_form .calculator_form-elem .right_form input {
+      max-width: 12.5rem; } }
 
 @media screen and (max-width: 1000px) {
   .main_news .main_news_container .main_news-content {
@@ -2781,12 +2870,39 @@ textarea {
       .main_news .main_news_container .main_news-content .main_news_text p {
         max-width: none;
         text-align: center; }
+  .investors .container .investors_elem .investors_text {
+    max-width: none; }
+  .investors .container .investors_elem .policy_invest {
+    max-width: none; }
+  .partners_leader .more_coins-img {
+    height: auto; }
+  .partners_leader .leader_forty .container .leader p {
+    margin-bottom: 0; }
+  .partners_table .table_container {
+    padding: 0; }
+    .partners_table .table_container .table {
+      padding: 2.5rem 0.625rem;
+      border: 0.625rem solid #bbbbbb;
+      text-align: center; }
+  .more_security .parallax {
+    opacity: 1; }
+  .more_security .container .more_security-head {
+    max-width: none;
+    padding: 3.125rem 0.9375rem;
+    text-align: center;
+    opacity: 0.9; }
   .room .room_container .room_content .left_content {
     max-width: 16.25rem; }
   .room .room_container .room_content .right_content {
     padding-left: 1.25rem; }
     .room .room_container .room_content .right_content .right_room .right_room-card .room_card-elem:nth-child(even) {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .partners_leader .leader_second .container .leader p {
+    margin-bottom: 0; }
+  .partners_leader .leader_second .img_leader-second {
+    max-width: none;
+    width: 100%;
+    height: 18.75rem; } }
 
 @media screen and (max-width: 930px) {
   .main_head .container .nav_block .head_entrance {
@@ -2795,10 +2911,21 @@ textarea {
       margin: 0; } }
 
 @media screen and (max-width: 890px) {
+  .calculator_title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem; }
+  .calculator_text {
+    margin-bottom: 0.9375rem; }
   .main_footer .footer_container .footer_content .footer_text {
     margin-bottom: 1.875rem; }
   .main_footer .footer_container .footer_content nav {
-    margin-right: 3.125rem; } }
+    margin-right: 3.125rem; }
+  .calculator_wrap .container .calculator_right .right_content {
+    max-width: none;
+    opacity: 0.8;
+    padding: 1.25rem; }
+  .calculator_wrap .container .calculator_right .calculator_right-data {
+    padding: 1.25rem; } }
 
 @media screen and (max-width: 850px) {
   .room .room_container .room_content .left_content {
@@ -2810,12 +2937,52 @@ textarea {
         font-weight: 400; }
   .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul li {
     font-size: 0.75rem; }
+  .investors_payments {
+    padding: 8.75rem 0.9375rem 0; }
+    .investors_payments h2 {
+      font-size: 1.25rem; }
+    .investors_payments .partners {
+      padding: 1.25rem;
+      align-items: center;
+      flex-direction: column; }
+    .investors_payments .payments_other .partners_container .other_wrap {
+      flex-direction: column; }
+      .investors_payments .payments_other .partners_container .other_wrap .payments_img:first-child {
+        order: 3; }
+      .investors_payments .payments_other .partners_container .other_wrap .payments_img:nth-child(2) {
+        margin-bottom: 1.875rem;
+        order: 2; }
+      .investors_payments .payments_other .partners_container .other_wrap p {
+        order: 1;
+        max-width: none;
+        text-align: center; }
+  .partners_content .programs_container .partners_start_elem {
+    padding: 1.25rem; }
+    .partners_content .programs_container .partners_start_elem .partners_coins-img {
+      height: auto; }
+    .partners_content .programs_container .partners_start_elem:nth-child(2) {
+      padding: 1.25rem; }
+    .partners_content .programs_container .partners_start_elem p {
+      text-align: center; }
   .registration .room_container .registration_content .container_form {
     flex-direction: column;
     align-items: center; }
     .registration .room_container .registration_content .container_form .registration-form:first-child {
       order: 1;
-      margin-top: 3.125rem; } }
+      margin-top: 3.125rem; }
+  .main_calculator_wrap .main_calculator {
+    padding: 5.625rem 0.625rem 3.125rem; }
+    .main_calculator_wrap .main_calculator .calculator_form .calculator_form-elem {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto; }
+      .main_calculator_wrap .main_calculator .calculator_form .calculator_form-elem p {
+        margin-bottom: 0.625rem; }
+      .main_calculator_wrap .main_calculator .calculator_form .calculator_form-elem select {
+        order: 1;
+        margin-top: 0.625rem; }
+      .main_calculator_wrap .main_calculator .calculator_form .calculator_form-elem .right_form input {
+        max-width: 12.5rem; } }
 
 @media screen and (max-width: 800px) {
   .reliability h2 {
@@ -2829,6 +2996,12 @@ textarea {
     .reliability .reliability_content .reliability_elem {
       max-width: none;
       margin: 0 0 1.875rem 0; }
+  .security .container .security_head {
+    padding: 0.625rem;
+    text-align: center;
+    opacity: 0.9; }
+    .security .container .security_head h2 {
+      font-size: 1.875rem; }
   .deposit .deposit_wrap {
     padding: 6.25rem 0.625rem; }
     .deposit .deposit_wrap .deposit_card {
@@ -2883,7 +3056,9 @@ textarea {
       .room .room_container .room_content .right_content .right_room .right_room-card .room_card-elem {
         flex: 1 1 45%; }
       .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul {
-        flex: 1 1 100%; } }
+        flex: 1 1 100%; }
+  .top_section .top_content .top_title {
+    font-size: 2.5rem; } }
 
 @media screen and (max-width: 725px) {
   .news .news_container .new_elem header {
@@ -2894,7 +3069,9 @@ textarea {
       flex-direction: column;
       justify-content: center; }
       .news .news_container .new_elem .news_content article h4 {
-        margin-bottom: 0.9375rem; } }
+        margin-bottom: 0.9375rem; }
+  .partners_content .container .partners_start p span {
+    font-size: 1.25rem; } }
 
 @media screen and (max-width: 620px) {
   .about {
@@ -2916,7 +3093,15 @@ textarea {
     .about_diploma .container .diploma_text {
       padding: 0.625rem;
       margin-bottom: 1.875rem;
-      text-align: center; } }
+      text-align: center; }
+  .investors .container .investors_elem .investors_text {
+    max-width: none; }
+  .investors .container .investors_elem .policy_invest h3 {
+    font-size: 1.25rem; }
+  .payments_content .partners_container .payments_elem_wrap .payments_elem h2 {
+    font-size: 1.5625rem; }
+  .payments_content .partners_container .payments_elem_wrap .payments_elem p span {
+    font-size: 1.25rem; } }
 
 @media screen and (max-width: 590px) {
   .main_footer .footer_container .footer_content .footer_text {
@@ -2961,6 +3146,21 @@ textarea {
       font-size: 1.5625rem; }
   .reliability .reliability_content .reliability_elem .reliability_footer {
     padding: 1.875rem 2.5rem 1.25rem; }
+  .top_section .top_content .top_title {
+    font-size: 1.5625rem; }
+  .main_calculator_wrap .calculator_results p {
+    font-size: 1.125rem;
+    margin-bottom: 0.9375rem; }
+    .main_calculator_wrap .calculator_results p span {
+      font-size: 1.25rem; }
+  .main_calculator_wrap .calculator_table ul li {
+    font-size: 0.9375rem; }
+    .main_calculator_wrap .calculator_table ul li:first-child {
+      font: 400 1rem "lato"; }
+  .calculator_wrap {
+    text-align: center; }
+    .calculator_wrap .calculator_right .right_content p {
+      font-size: 0.9375rem; }
   .room .room_container .room_content .right_content .room_tabs .tabs_content .abnormal_banner .banner .banner_elem .banner_link {
     flex-direction: column;
     align-items: center; }
@@ -2972,6 +3172,11 @@ textarea {
     padding: 0.625rem;
     text-align: center; }
   .room .room_container .room_content .right_content .statistics_room .statistics_room-table ul li {
-    font-size: 0.5625rem; } }
+    font-size: 0.5625rem; }
+  .main_footer .footer_container .footer_content .contacts_footer .social_footer a {
+    height: 45px;
+    width: 45px; }
+  .main_footer .footer_container .footer_content .contacts_footer .contacts a {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=main.css.map*/

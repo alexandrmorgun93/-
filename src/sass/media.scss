@@ -1,8 +1,20 @@
-//@media only screen and (max-width: 1920px) {
-//  html {
-//    font-size: 16px;
-//  }
-//}
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and(max-width: 1669px) {
+  .partners_content {
+    .programs_container {
+      .partners_start_elem {
+        margin: 0 0 rem(40px) 0;
+
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1480px) {
   //advantages
   .advantages {
@@ -44,17 +56,24 @@
 
   }
   //efective partners
-  //.effective_partners {
-  //  .effective_partners-img {
-  //    max-width: none;
-  //    width: 100%;
-  //  }
-  //  .container {
-  //    .effective {
-  //      max-width: none;
-  //    }
-  //  }
-  //}
+  .effective_partners {
+    .effective_partners-img {
+      max-width: none;
+      width: 100%;
+      min-height: rem(350px);
+      height: auto;
+      opacity: 0.2;
+    }
+    .container {
+      .effective {
+        max-width: none;
+        p {
+          text-align: center;
+        }
+
+      }
+    }
+  }
   //parnters leader
   .partners_leader {
     h2 {
@@ -63,11 +82,11 @@
     .container {
       display: flex;
       flex-direction: column;
-      padding: 0 rem(20px);
       .leader {
         margin-bottom: rem(100px);
         max-width: none;
         text-align: center;
+        padding: 0 rem(20px);
       }
       .partners_leader-img {
         margin: 0 auto rem(100px);
@@ -79,6 +98,68 @@
     .leader_second {
       .img_leader-second {
         top: 0;
+
+      }
+    }
+  }
+  //security_content
+  .security_content {
+    .security_content-img {
+      max-width: none;
+      width: 100%;
+      height: 900px;
+      top: 5%;
+    }
+    .container {
+      .security_info {
+        max-width: none;
+        background-color: #fff;
+        opacity: 0.9;
+        text-align: center;
+        padding: 0 rem(10px);
+      }
+    }
+  }
+  //partners content
+  .partners_content {
+    .container {
+      .partners_start {
+        max-width: none;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  //payments_content
+  .payments_content {
+    .payment_content_img {
+      opacity: 0.2;
+    }
+    .partners_container {
+      .payments_elem_wrap {
+        .payments_elem {
+          max-width: none;
+          opacity: 0.9;
+          padding: rem(40px) rem(15px) rem(60px);
+        }
+        &:first-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+  //calculator_wrap
+  .calculator_wrap {
+    .container {
+      .calculator_left {
+        max-width: none;
+        background-color: #fff;
+        opacity: 0.9;
+        padding: rem(40px) rem(30px);
+        p {
+          margin-bottom: rem(30px);
+        }
       }
     }
   }
@@ -288,6 +369,44 @@
       }
     }
   }
+  //coins_stage
+  .security_content {
+    .container {
+      .coins_stage {
+        padding: 0 rem(15px);
+        .coins_stage-text {
+          flex-direction: column;
+          p {
+            max-width: none;
+            text-align: center;
+            margin-bottom: rem(15px);
+          }
+        }
+      }
+    }
+  }
+  //main calculator wrap
+  .main_calculator_wrap {
+    .main_calculator {
+      padding: rem(90px) rem(10px) rem(50px);
+      .calculator_form {
+        .calculator_form-elem {
+          p {
+            font-size: rem(18px);
+          }
+          select {
+            max-width: rem(200px);
+            font-size: rem(12px);
+          }
+          .right_form {
+            input {
+              max-width: rem(200px);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and(max-width: 1000px) {
@@ -309,6 +428,59 @@
             text-align: center;
           }
         }
+      }
+    }
+  }
+  //investors
+  .investors {
+    .container {
+      .investors_elem {
+        .investors_text {
+          max-width: none;
+        }
+        .policy_invest {
+          max-width: none;
+
+        }
+      }
+    }
+  }
+  //partners_leader
+  .partners_leader {
+    .more_coins-img {
+      height: auto;
+    }
+    .leader_forty {
+      .container {
+        .leader {
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .partners_table {
+    .table_container {
+      padding: 0;
+      .table {
+        padding: rem(40px) rem(10px);
+        border: rem(10px) solid #bbbbbb;
+        text-align: center;
+      }
+    }
+  }
+  //more_security
+  .more_security {
+    .parallax {
+      opacity: 1;
+    }
+    .container {
+      .more_security-head {
+        max-width: none;
+        padding: rem(50px) rem(15px);
+        text-align: center;
+        opacity: 0.9;
       }
     }
   }
@@ -335,6 +507,23 @@
       }
     }
   }
+  //parnters leader
+  .partners_leader {
+    .leader_second {
+      .container {
+        .leader {
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .img_leader-second {
+        max-width: none;
+        width: 100%;
+        height: rem(300px);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 930px) {
@@ -357,6 +546,13 @@
 }
 
 @media screen and (max-width: 890px) {
+  .calculator_title {
+    font-size: rem(20px);
+    margin-bottom: rem(20px);
+  }
+  .calculator_text {
+    margin-bottom: rem(15px);
+  }
   //footer
   .main_footer {
     .footer_container {
@@ -366,6 +562,21 @@
         }
         nav {
           margin-right: rem(50px);
+        }
+      }
+    }
+  }
+  //calculator_wrap
+  .calculator_wrap {
+    .container {
+      .calculator_right {
+        .right_content {
+          max-width: none;
+          opacity: 0.8;
+          padding: rem(20px);
+        }
+        .calculator_right-data {
+          padding: rem(20px);
         }
       }
     }
@@ -401,7 +612,6 @@
               }
             }
           }
-
         }
         .right_content {
           .statistics_room {
@@ -417,6 +627,57 @@
       }
     }
   }
+  //investors payments
+  .investors_payments {
+    padding: rem(140px) rem(15px) 0;
+    h2 {
+      font-size: rem(20px);
+    }
+    .partners {
+      padding: rem(20px);
+      align-items: center;
+      flex-direction: column;
+    }
+    .payments_other {
+      .partners_container {
+        .other_wrap {
+          flex-direction: column;
+          .payments_img {
+            &:first-child {
+              order: 3;
+            }
+            &:nth-child(2) {
+              margin-bottom: rem(30px);
+              order: 2;
+            }
+          }
+          p {
+            order: 1;
+            max-width: none;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  //partners start elem
+  .partners_content {
+    .programs_container {
+      .partners_start_elem {
+        padding: rem(20px);
+        .partners_coins-img {
+          height: auto;
+        }
+
+        &:nth-child(2) {
+          padding: rem(20px);
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
   //registration
   .registration {
     .room_container {
@@ -428,6 +689,31 @@
             &:first-child {
               order: 1;
               margin-top: rem(50px);
+            }
+          }
+        }
+      }
+    }
+  }
+  //main calculator wrap
+  .main_calculator_wrap {
+    .main_calculator {
+      padding: rem(90px) rem(10px) rem(50px);
+      .calculator_form {
+        .calculator_form-elem {
+          flex-direction: column;
+          align-items: flex-start;
+          height: auto;
+          p {
+            margin-bottom: rem(10px);
+          }
+          select {
+            order: 1;
+            margin-top: rem(10px);
+          }
+          .right_form {
+            input {
+              max-width: rem(200px);
             }
           }
         }
@@ -453,6 +739,19 @@
         max-width: none;
         margin: 0 0 rem(30px) 0;
 
+      }
+    }
+  }
+  //security head
+  .security {
+    .container {
+      .security_head {
+        padding: rem(10px);
+        text-align: center;
+        opacity: 0.9;
+        h2 {
+          font-size: rem(30px);
+        }
       }
     }
   }
@@ -571,6 +870,14 @@
       }
     }
   }
+  //top section
+  .top_section {
+    .top_content {
+      .top_title {
+        font-size: rem(40px);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 725px) {
@@ -588,6 +895,18 @@
             h4 {
               margin-bottom: rem(15px);
             }
+          }
+        }
+      }
+    }
+  }
+  //partners content
+  .partners_content {
+    .container {
+      .partners_start {
+        p {
+          span {
+            font-size: rem(20px);
           }
         }
       }
@@ -626,6 +945,38 @@
         padding: rem(10px);
         margin-bottom: rem(30px);
         text-align: center;
+      }
+    }
+  }
+  //investors
+  .investors {
+    .container {
+      .investors_elem {
+        .investors_text {
+          max-width: none;
+        }
+        .policy_invest {
+          h3 {
+            font-size: rem(20px);
+          }
+        }
+      }
+    }
+  }
+  //payments_content
+  .payments_content {
+    .partners_container {
+      .payments_elem_wrap {
+        .payments_elem {
+          h2 {
+            font-size: rem(25px);
+          }
+          p {
+            span {
+              font-size: rem(20px);
+            }
+          }
+        }
       }
     }
   }
@@ -736,6 +1087,46 @@
       }
     }
   }
+  //top section
+  .top_section {
+    .top_content {
+      .top_title {
+        font-size: rem(25px);
+      }
+    }
+  }
+  //main calculator wrap
+  .main_calculator_wrap {
+    .calculator_results {
+      p {
+        font-size: rem(18px);
+        margin-bottom: rem(15px);
+        span {
+          font-size: rem(20px);
+        }
+      }
+    }
+    .calculator_table {
+      ul {
+        li {
+          font-size: rem(15px);
+          &:first-child {
+            font: 400 rem(16px) $lato;
+          }
+        }
+      }
+    }
+  }
+  .calculator_wrap {
+    text-align: center;
+    .calculator_right {
+      .right_content {
+        p {
+          font-size: rem(15px);
+        }
+      }
+    }
+  }
   //abnormal-settings
   .room {
     .room_container {
@@ -787,6 +1178,26 @@
                   font-size: rem(9px);
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  //footer
+  .main_footer {
+    .footer_container {
+      .footer_content {
+        .contacts_footer {
+          .social_footer {
+            a {
+              height: 45px;
+              width: 45px;
+            }
+          }
+          .contacts {
+            a {
+              font-size: rem(16px);
             }
           }
         }

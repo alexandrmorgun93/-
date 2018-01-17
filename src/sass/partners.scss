@@ -59,29 +59,39 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     .partners_start_elem {
       max-width: rem(820px);
       width: 100%;
-      padding: rem(110px) rem(80px) rem(140px) rem(115px);
-      border: rem(15px) solid #d4d4d4;
       margin-right: rem(30px);
+      padding: rem(20px);
+      background-image: linear-gradient(to top, #676869 0%, #676869 1%, #8c8d8f 17%, #c1c1c2 36%, #faf8f5 54%, #ebeae9 67%, #dcdcdc 74%, #b5b6b7 100%);
+      display: block;
       &:nth-child(2) {
-        padding: rem(75px) rem(85px) rem(120px);
-        margin-right: 0;
-      }
-      .partners_coins-img {
-        max-width: rem(500px);
-        height: rem(240px);
-        margin-bottom: rem(30px);
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+        .start_elem-gradient {
+          padding: rem(80px) rem(85px) rem(120px);
+          margin-right: 0;
         }
       }
-      .coins-img {
-        max-width: rem(580px);
-        height: rem(350px);
+      .start_elem-gradient {
+        width: 100%;
+        height: 100%;
+        padding: rem(110px) rem(80px) rem(140px) rem(115px);
+        background-color: #fff;
+        .partners_coins-img {
+          max-width: rem(500px);
+          height: rem(240px);
+          margin-bottom: rem(30px);
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .coins-img {
+          max-width: rem(580px);
+          height: rem(350px);
+        }
       }
     }
   }
@@ -193,6 +203,7 @@
     }
   }
   .container {
+    padding: 0;
     .leader {
       background-color: #fff;
       opacity: 0.9;
@@ -222,13 +233,16 @@
     width: 100%;
     position: relative;
     margin-bottom: rem(250px);
+    background-color: #fff;
+    opacity: 0.9;
     .forty_leader-img {
       max-width: rem(470px);
       width: 39%;
-      height: rem(430px);
+      height: auto;
       position: absolute;
       right: rem(30px);
       top: 50%;
+      z-index: -1;
       img {
         position: relative;
         width: 100%;
