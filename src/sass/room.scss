@@ -95,8 +95,7 @@
       }
       .right_content {
         position: relative;
-        max-width: 80%;
-        width: 80%;
+        width: 100%;
         padding-left: rem(30px);
         .right_room {
           width: 100%;
@@ -107,14 +106,13 @@
             position: relative;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
             background-color: #f6f6f6;
             padding: rem(35px) rem(25px);
             .room_card-elem {
               max-width: rem(264px);
               width: 100%;
-              flex: 1 1 30%;
-              margin: 0 rem(30px) rem(25px) 0;
+              flex: 1 1 28%;
+              margin: 0 rem(15px) rem(25px) rem(15px);
               p {
                 width: 100%;
                 text-transform: uppercase;

@@ -74,6 +74,8 @@
       }
     }
     .btn {
+      max-width: rem(280px);
+      width: 100%;
       color: #333333;
       font: 700 rem(16px) $lato;
       letter-spacing: rem(0.32px);

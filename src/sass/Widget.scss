@@ -1,0 +1,58 @@
+.widget_wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: rem(115px) 0;
+  .widget {
+    width: 100%;
+    position: relative;
+    max-width: rem(1010px);
+    height: rem(530px);
+    margin: 0 auto rem(70px);
+    p {
+      position: absolute;
+      z-index: 1;
+      color: #1c1c1c;
+      transform: rotate(-90deg);
+      text-transform: uppercase;
+      display: inline-block;
+      font: 400 rem(40px)/1 "Proxima Nova - Extrabld";
+    }
+    .title_btc {
+      bottom: rem(100px);
+      left: rem(-117px);
+    }
+    .title_eth {
+      bottom: rem(133px);
+      left: rem(-150px);
+    }
+    .title_ltc {
+      bottom: rem(100px);
+      left: rem(-133px);
+    }
+    #widget_btc, #widget_eth, #widget_ltc {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: rem(15px);
+      background-image: $yllow-circle;
+      box-shadow: rem(-12px) rem(23px) rem(68px) rgba(0, 0, 0, 0.06);
+    }
+    #widget_eth {
+      background-image: $icons-color;
+    }
+    #widget_ltc {
+      background-image: $grey-gradient;
+    }
+  }
+  .btn {
+    max-width: rem(241px);
+    width: 100%;
+    align-self: center;
+    font-weight: 700;
+  }
+
+}

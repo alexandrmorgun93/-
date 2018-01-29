@@ -58,30 +58,24 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     .partners_start_elem {
       max-width: rem(820px);
       width: 100%;
-      margin-right: rem(30px);
+      margin: 0 rem(15px);
+      flex: 1 1 45%;
       padding: rem(20px);
       background-image: linear-gradient(to top, #676869 0%, #676869 1%, #8c8d8f 17%, #c1c1c2 36%, #faf8f5 54%, #ebeae9 67%, #dcdcdc 74%, #b5b6b7 100%);
       display: block;
-      &:nth-child(2) {
-        .start_elem-gradient {
-          padding: rem(80px) rem(85px) rem(120px);
-          margin-right: 0;
-        }
-      }
       .start_elem-gradient {
         width: 100%;
         height: 100%;
-        padding: rem(110px) rem(80px) rem(140px) rem(115px);
+        padding: rem(110px) rem(80px) rem(140px) rem(90px);
         background-color: #fff;
         .partners_coins-img {
           max-width: rem(500px);
-          height: rem(240px);
-          margin-bottom: rem(30px);
+          height: auto;
+          margin: 0 auto rem(30px);
           img {
             width: 100%;
             height: 100%;
@@ -90,7 +84,6 @@
         }
         .coins-img {
           max-width: rem(580px);
-          height: rem(350px);
         }
       }
     }
@@ -171,7 +164,7 @@
     }
     .partners_leader-img {
       max-width: rem(740px);
-      height: 740px;
+      height: rem(740px);
       width: 100%;
       position: absolute;
       top: 0;
@@ -237,7 +230,7 @@
     opacity: 0.9;
     .forty_leader-img {
       max-width: rem(470px);
-      width: 39%;
+      width: 35%;
       height: auto;
       position: absolute;
       right: rem(30px);
@@ -246,7 +239,6 @@
       img {
         position: relative;
         width: 100%;
-        height: 100%;
         object-fit: cover;
       }
     }

@@ -14,7 +14,6 @@
       width: 100%;
       padding: rem(60px) rem(100px) rem(80px);
       background-color: #fff;
-      opacity: 0.95;
       h2 {
         color: #1c1c1c;
         text-transform: uppercase;
@@ -162,6 +161,19 @@
       object-fit: cover;
     }
   }
+  .partners_img-table {
+    max-width: rem(520px);
+    width: 34%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
   .table_container {
     max-width: rem(1420px);
     width: 100%;
@@ -177,13 +189,41 @@
         padding: rem(80px) rem(130px) rem(100px);
         background-color: #fff;
         p {
-          font: 300 rem(20px)/1.75 $lato;
-          margin-bottom: rem(40px);
-          span {
-            font: 700 rem(30px) $lato;
+          font: 700 rem(20px)/1.7 $lato;
+          &:first-child {
+            margin-bottom: rem(50px);
+            font-style: normal;
           }
           &:last-child {
-            margin-bottom: 0;
+            font-weight: 300;
+            font-style: italic;
+            margin-top: rem(50px);
+          }
+        }
+        .text_el {
+          font-style: normal !important;
+        }
+        ol {
+          counter-reset: list1;
+          li {
+            font: 300 rem(20px)/1.7 $lato;
+            &::before {
+              counter-increment: list1;
+              content: counter(list1) ". ";
+              letter-spacing: 0.6px;
+              font: 700 rem(30px)/1.1 $lato;
+            }
+
+          }
+        }
+      }
+      .table-rev {
+        padding: rem(50px) rem(120px) rem(100px) rem(140px);
+        p {
+          margin-bottom: 0;
+          &:last-child {
+            font-style: italic;
+            margin-top: rem(30px);
           }
         }
       }

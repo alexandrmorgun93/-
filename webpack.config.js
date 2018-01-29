@@ -49,6 +49,11 @@ if (process.env.NODE_ENV == 'production') {
             minimize: true,
             debug: false
         }),
+        new webpack.ProvidePlugin({
+            $: "jquery/dist/jquery.js",
+            jQuery: "jquery/dist/jquery.js",
+            "window.jQuery": "jquery/dist/jquery.js"
+        })
     ]
 } else {
     module.exports.module = {
@@ -73,6 +78,11 @@ if (process.env.NODE_ENV == 'production') {
     module.exports.plugins = [
         new ExtractTextPlugin({
             filename: './css/main.css'
+        }),
+        new webpack.ProvidePlugin({
+            $: "jquery/dist/jquery.js",
+            jQuery: "jquery/dist/jquery.js",
+            "window.jQuery": "jquery/dist/jquery.js"
         })
     ]
 

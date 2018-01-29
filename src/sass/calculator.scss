@@ -39,7 +39,7 @@
     top: auto;
     left: auto;
     bottom: 0;
-    height: auto;
+    height: rem(840px);
     right: 0;
     opacity: 0.23;
   }
@@ -64,7 +64,7 @@
         position: relative;
         max-width: rem(750px);
         width: 100%;
-       padding: rem(30px)rem(100px)rem(20px)rem(50px);
+        padding: rem(30px) rem(100px) rem(20px) rem(50px);
         opacity: 0.9;
         background-color: #fff;
         .forty_img {

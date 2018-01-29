@@ -5,12 +5,36 @@
 }
 
 @media screen and(max-width: 1669px) {
-  .partners_content {
-    .programs_container {
-      .partners_start_elem {
-        margin: 0 0 rem(40px) 0;
-
+  //deposit card
+  .deposit {
+    .deposit_wrap {
+      .deposit_card {
+        max-width: rem(260px);
+        .card_head {
+          height: rem(260px);
+          top: rem(-100px);
+          h3 {
+            font-size: rem(40px);
+          }
+        }
+        .card_content {
+          padding-top: rem(190px);
+        }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  //reliability
+  .reliability {
+    .reliability_content {
+      .reliability_elem {
+        .reliability_footer {
+          padding: rem(55px) rem(20px) rem(40px) rem(30px);
+        }
+      }
+
     }
   }
 }
@@ -31,6 +55,155 @@
       }
     }
   }
+  //partners content
+  .partners_content {
+    .programs_container {
+      .partners_start_elem {
+        .start_elem-gradient {
+          padding: rem(50px) rem(70px) rem(50px);
+        }
+      }
+    }
+  }
+  .room {
+    .room_container {
+      .room_content {
+        .right_content {
+          .room_tabs {
+            .tabs_content {
+              .operations {
+                .deposit_content {
+                  .deposit_card {
+                    flex: 1 1 30%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  ////slide
+  .main_slide {
+    .main_slide_wrap {
+      .slide_elem {
+        .container {
+          .slide_content {
+            h2 {
+              font-size: rem(60px);
+            }
+          }
+        }
+      }
+    }
+  }
+  //deposit card
+  .deposit {
+    .deposit_wrap {
+      padding: rem(200px) rem(10px) 0;
+      .deposit_card {
+        max-width: rem(260px);
+        .card_head {
+          height: rem(260px);
+          top: rem(-100px);
+          h3 {
+            font-size: rem(30px);
+            line-height: 1.5;
+          }
+          p {
+            font-size: rem(25px);
+            line-height: 1.5;
+          }
+        }
+        .card_content {
+          padding: rem(190px) rem(20px) rem(50px);
+          p {
+            font-size: rem(15px);
+            margin-bottom: rem(30px);
+            &::before {
+              bottom: rem(-15px);
+            }
+          }
+          h4 {
+            font-size: rem(16px);
+          }
+        }
+      }
+    }
+  }
+  //security head
+  .security {
+    margin-bottom: rem(100px);
+    .container {
+      .security_head {
+        max-width: rem(800px);
+        padding: rem(40px) rem(80px) rem(60px);
+        opacity: 0.92;
+        h2 {
+          margin-bottom: rem(50px);
+        }
+      }
+    }
+  }
+  //reliability
+  .reliability {
+    .reliability_content {
+      .reliability_elem {
+        .reliability_head {
+          height: rem(130px);
+        }
+        .reliability_footer {
+          padding: rem(55px) rem(20px) rem(40px) rem(30px);
+          p {
+            font-size: rem(15px);
+          }
+        }
+      }
+
+    }
+  }
+  .partners_table {
+    .more_security-img {
+      top: rem(50px);
+    }
+    .table_container {
+      .table {
+        opacity: 0.7;
+        .table-gradient {
+          padding: rem(40px) rem(15px) rem(20px) rem(30px);
+        }
+      }
+    }
+    .partners_img-table {
+      z-index: -1;
+      opacity: 0.25;
+    }
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  //investments
+  .investments {
+    .coins_investment-img {
+      height: auto;
+    }
+    .container {
+      .investments_wrap {
+        opacity: 0.8;
+      }
+    }
+  }
+  .room {
+    .room_container {
+      .room_content {
+        padding: 70px 80px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -43,8 +216,15 @@
       }
     }
   }
-  .investments {
-    .coins_investment-img {
+  //reliability
+  .reliability {
+    .reliability_content {
+      .reliability_elem {
+        flex: 1 1 40%;
+        .reliability_footer {
+          padding: rem(55px) rem(70px) rem(80px) rem(75px);
+        }
+      }
 
     }
   }
@@ -57,12 +237,10 @@
   }
   //efective partners
   .effective_partners {
+    margin-bottom: rem(90px);
     .effective_partners-img {
-      max-width: none;
-      width: 100%;
-      min-height: rem(350px);
-      height: auto;
-      opacity: 0.2;
+      display: none;
+
     }
     .container {
       .effective {
@@ -78,15 +256,19 @@
   .partners_leader {
     h2 {
       font-size: rem(30px);
+      margin-bottom: rem(50px);
     }
     .container {
       display: flex;
       flex-direction: column;
       .leader {
-        margin-bottom: rem(100px);
+        margin-bottom: rem(30px);
         max-width: none;
         text-align: center;
         padding: 0 rem(20px);
+        p {
+          margin-bottom: rem(30px);
+        }
       }
       .partners_leader-img {
         margin: 0 auto rem(100px);
@@ -101,15 +283,62 @@
 
       }
     }
+    .fifty_leader {
+      .forty_leader-img {
+        opacity: 0.1;
+      }
+    }
   }
+  .partners_table {
+    .more_security-img {
+      display: none;
+    }
+    .table_container {
+      padding: 0;
+      .table {
+        padding: rem(10px);
+        .table-gradient {
+          ol {
+            li {
+              font-size: rem(16px);
+              margin-bottom: rem(15px);
+              &::before {
+                font-size: rem(20px);
+              }
+            }
+          }
+          p {
+            &:first-child {
+              margin-bottom: rem(30px);
+            }
+            &:last-child {
+              margin-top: rem(30px);
+            }
+          }
+        }
+      }
+    }
+  }
+  //room
+  .room {
+    .room_container {
+      .room_content {
+        .right_content {
+          .right_room {
+            .right_room-card {
+              justify-content: center;
+              .room_card-elem {
+                flex: 1 1 45%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   //security_content
   .security_content {
-    .security_content-img {
-      max-width: none;
-      width: 100%;
-      height: 900px;
-      top: 5%;
-    }
     .container {
       .security_info {
         max-width: none;
@@ -131,6 +360,19 @@
       }
     }
   }
+  //partners elem
+  .partners_content {
+    .programs_container {
+      .partners_start_elem {
+        flex: 1 1 100%;
+        margin-bottom: rem(50px);
+        .start_elem-gradient {
+          padding: rem(110px) rem(80px) rem(140px) rem(90px);
+        }
+      }
+    }
+  }
+
   //payments_content
   .payments_content {
     .payment_content_img {
@@ -151,15 +393,40 @@
   }
   //calculator_wrap
   .calculator_wrap {
+    .calculator_img {
+      opacity: 0.2;
+    }
     .container {
       .calculator_left {
         max-width: none;
         background-color: #fff;
-        opacity: 0.9;
+        opacity: 0.8;
         padding: rem(40px) rem(30px);
         p {
           margin-bottom: rem(30px);
         }
+      }
+    }
+  }
+  //deposit
+  .deposit {
+    .deposit_wrap {
+      .deposit_card {
+        flex: 1 1 30%;
+      }
+    }
+  }
+  //deposit slide
+  .deposit_increase {
+    .increase {
+      .main_title {
+        font-size: rem(35px);
+      }
+    }
+    .increase_content {
+      padding: rem(30px) rem(20px);
+      .increase_elem {
+        margin: 0 rem(15px);
       }
     }
   }
@@ -181,10 +448,48 @@
 }
 
 @media screen and (max-width: 1180px) {
+  ////slide
+  .main_slide {
+    height: rem(600px);
+    .main_slide_wrap {
+      .slide_elem {
+        .container {
+          height: rem(600px);
+          .slide_content {
+            h2 {
+              font-size: rem(40px);
+              .text_item {
+                font-size: rem(45px);
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+  //widget
+  .widget_wrap {
+    padding: rem(115px) rem(15px);
+    .widget {
+      margin: 0 auto rem(100px);
+      .title_btc, .title_eth, .title_ltc {
+        left: 0;
+        bottom: auto;
+        transform: rotate(0deg);
+        top: rem(-45px);
+      }
+    }
+  }
   //head
   .main_head {
+    height: rem(120px);
     .container {
       align-items: center;
+      .logo {
+        width: rem(90px);
+        height: rem(90px);
+      }
       .menu_btn {
         display: flex;
         position: relative;
@@ -217,15 +522,25 @@
             margin-bottom: rem(10px);
           }
           .form_reg {
-            margin-bottom: rem(30px);
+            margin-bottom: rem(50px);
             a {
               font-size: rem(10px);
               width: rem(80px);
               height: rem(25px);
+              span {
+                width: rem(74px);
+                height: rem(19px);
+                line-height: rem(20px);
+                margin: rem(2px);
+              }
             }
             .btn {
               width: rem(100px);
-
+              height: rem(25px);
+              span {
+                width: rem(94px);
+                height: rem(19px);
+              }
             }
 
           }
@@ -234,7 +549,9 @@
           flex-direction: column;
           align-items: center;
           width: 100%;
+          padding-bottom: rem(25px);
           .main_nav {
+            margin-bottom: rem(30px);
             ul {
               text-align: center;
               flex-direction: column;
@@ -250,12 +567,12 @@
                     width: 0;
                     height: 0;
                   }
-
                 }
               }
             }
           }
           .language {
+            margin: 0;
             a {
               margin-right: rem(15px);
             }
@@ -263,6 +580,15 @@
         }
 
       }
+    }
+  }
+  //reliability
+  .reliability {
+    .reliability_content {
+      .reliability_elem {
+        flex: 1 1 100%;
+      }
+
     }
   }
   //room
@@ -278,6 +604,7 @@
                   .personal_wrap {
                     flex-direction: column;
                     align-items: center;
+                    padding: 0;
                     .personal_form-left {
                       margin: 0 0 rem(30px) 0;
                     }
@@ -286,6 +613,7 @@
                     .security_form-wrap {
                       flex-direction: column;
                       align-items: center;
+                      padding: 0;
                       .security_left-form {
                         margin: 0 0 rem(30px) 0;
                       }
@@ -340,7 +668,31 @@
       }
     }
   }
+  //investments
+  .investments {
+    .coins_investment-img {
+      display: none;
+    }
+    .container {
+      .investments_wrap {
+        max-width: none;
+        .investments_content {
+          max-width: none;
+        }
 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .investors {
+    .investors_img {
+      max-width: none;
+      width: 100%;
+      opacity: 0.2;
+    }
+  }
 }
 
 @media screen and (max-width: 1075px) {
@@ -445,6 +797,9 @@
       }
     }
   }
+  .top_section {
+    height: rem(450px);
+  }
   //partners_leader
   .partners_leader {
     .more_coins-img {
@@ -460,16 +815,6 @@
       }
     }
   }
-  .partners_table {
-    .table_container {
-      padding: 0;
-      .table {
-        padding: rem(40px) rem(10px);
-        border: rem(10px) solid #bbbbbb;
-        text-align: center;
-      }
-    }
-  }
   //more_security
   .more_security {
     .parallax {
@@ -480,7 +825,7 @@
         max-width: none;
         padding: rem(50px) rem(15px);
         text-align: center;
-        opacity: 0.9;
+        opacity: 0.96;
       }
     }
   }
@@ -536,9 +881,40 @@
           p {
             margin: 0;
           }
-          //.form_reg {
-          //  margin-top: rem(20px);
-          //}
+        }
+      }
+    }
+  }
+  ////slide
+  .main_slide {
+    height: rem(600px);
+    .main_slide_wrap {
+      .slide_elem {
+        .container {
+          height: rem(600px);
+          .slide_content {
+            h2 {
+              text-align: center;
+              font-size: rem(35px);
+              .text_item {
+                font-size: rem(30px);
+              }
+
+            }
+            .slide_reliability {
+              padding-left: 0;
+              p {
+                text-align: center;
+                font-size: rem(25px);
+                display: block;
+                margin-bottom: rem(30px);
+                &::before {
+                  top: rem(-20px);
+                  left: calc(50% - 35px);
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -579,6 +955,13 @@
           padding: rem(20px);
         }
       }
+    }
+    .last_img {
+      max-width: none;
+      width: 100%;
+    }
+    .third_img {
+      display: none;
     }
   }
 }
@@ -664,16 +1047,9 @@
   .partners_content {
     .programs_container {
       .partners_start_elem {
-        padding: rem(20px);
-        .partners_coins-img {
-          height: auto;
-        }
-
-        &:nth-child(2) {
-          padding: rem(20px);
-        }
-        p {
-          text-align: center;
+        padding: rem(10px);
+        .start_elem-gradient {
+          padding: rem(30px) rem(25px);
         }
       }
     }
@@ -730,16 +1106,22 @@
     }
     .reliability_content {
       padding: 0 rem(15px);
+      margin-bottom: rem(90px);
       .reliability_img {
         max-width: rem(300px);
-        bottom: 0;
+        bottom: -5%;
         left: auto;
       }
       .reliability_elem {
-        max-width: none;
+        //max-width: none;
+        flex: 1 1 100%;
         margin: 0 0 rem(30px) 0;
 
       }
+    }
+    .reliability_video {
+      height: rem(450px);
+      margin-bottom: rem(60px);
     }
   }
   //security head
@@ -748,20 +1130,47 @@
       .security_head {
         padding: rem(10px);
         text-align: center;
-        opacity: 0.9;
+        opacity: 0.96;
         h2 {
           font-size: rem(30px);
         }
       }
     }
   }
+  //deposit slide
+  .deposit_increase {
+    .increase {
+      .main_title {
+        font-size: rem(25px);
+      }
+    }
+    .increase_content {
+      .increase_elem {
+        h4 {
+          font-size: rem(18px);
+        }
+        p {
+          font-size: rem(16px);
+        }
+      }
+    }
+  }
+  //advantages
+  .advantages {
+    margin-top: rem(50px);
+    padding-bottom: rem(50px);
+    .main_title {
+      margin-bottom: rem(50px);
+    }
+  }
   //deposit
   .deposit {
     .deposit_wrap {
-      padding: rem(100px) rem(10px);
+      padding: rem(100px) rem(10px) rem(50px);
       .deposit_card {
         max-width: rem(160px);
         margin-bottom: rem(120px);
+        flex: 1 1 50%;
         .card_head {
           height: rem(160px);
           top: rem(-80px);
@@ -828,16 +1237,23 @@
     .faq_content {
       padding: rem(100px) 0 rem(100px) rem(50px);
       h3 {
-        font-size: rem(25px);
+        font-size: rem(15px);
         &::before {
           left: -53%;
         }
       }
     }
   }
-}
-
-@media screen and (max-width: 760px) {
+  .partners_leader {
+    .fifty_leader {
+      .forty_leader-img {
+        opacity: 0.1;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+      }
+    }
+  }
   //room
   .room {
     .room_container {
@@ -846,9 +1262,8 @@
         align-items: center;
         padding: rem(15px);
         .right_content {
-          max-width: 100%;
-          width: 100%;
           padding: 0;
+          margin-top: rem(50px);
           .right_room {
             .right_room-card {
               .room_card-elem {
@@ -870,13 +1285,33 @@
       }
     }
   }
+  .partners {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
   //top section
   .top_section {
+    height: rem(400px);
     .top_content {
       .top_title {
         font-size: rem(40px);
       }
     }
+  }
+  .partners_content {
+    margin-top: rem(50px);
+    .container {
+      .partners_start {
+        margin-bottom: rem(40px);
+      }
+
+    }
+  }
+  .effective_partners {
+    margin-top: rem(40px);
   }
 }
 
@@ -891,7 +1326,10 @@
           padding: rem(20px);
           article {
             flex-direction: column;
-            justify-content: center;
+            .left_news {
+              text-align: center;
+              flex-direction: column;
+            }
             h4 {
               margin-bottom: rem(15px);
             }
@@ -918,9 +1356,16 @@
   //about us
   .about {
     margin-bottom: rem(50px);
+    padding: rem(50px) 0 0;
+    .about_img {
+      display: none;
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+    }
     .container {
       .about_content {
-        padding: rem(30px);
+        padding: rem(30px) rem(6px);
         h2 {
           text-align: center;
           font-size: rem(20px);
@@ -934,6 +1379,7 @@
   .about_diploma {
     margin-bottom: rem(50px);
     .container {
+      padding: 0;
       .diploma_img {
         max-width: none;
         height: auto;
@@ -950,6 +1396,10 @@
   }
   //investors
   .investors {
+    .investors_img {
+      max-width: rem(300px);
+      height: rem(300px);
+    }
     .container {
       .investors_elem {
         .investors_text {
@@ -960,6 +1410,19 @@
             font-size: rem(20px);
           }
         }
+      }
+    }
+  }
+  //widget
+  .widget_wrap {
+    padding: rem(115px) rem(5px);
+    .widget {
+      height: rem(400px);
+      p {
+        font-size: rem(25px);
+      }
+      #widget_btc, #widget_eth, #widget_ltc {
+        padding: rem(5px);
       }
     }
   }
@@ -980,6 +1443,12 @@
       }
     }
   }
+  .advantages {
+    h2 {
+      font-size: rem(30px);
+      margin-bottom: rem(200px);
+    }
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -997,6 +1466,27 @@
         }
         .contacts_footer {
           margin-bottom: rem(50px);
+        }
+      }
+    }
+  }
+  //deposit increase
+  .deposit_increase {
+    .increase {
+      .main_title {
+        font-size: rem(18px);
+      }
+    }
+    .increase_content {
+      padding: rem(15px);
+      .increase_elem {
+        margin: 0;
+        h4 {
+          font-weight: 300;
+          font-size: rem(16px);
+        }
+        p {
+          font-size: rem(14px);
         }
       }
     }
@@ -1026,11 +1516,75 @@
       }
     }
   }
+  //investments
+  .investments {
+    .container {
+      .investments_wrap {
+        .investments_content {
+          padding: rem(10px);
+          text-align: center;
+        }
+      }
+    }
+  }
+  .room {
+    .room_container {
+      .room_content {
+        .right_content {
+          .room_tabs {
+            .tabs_content {
+              .operations {
+                .deposit_content {
+                  .deposit_card {
+                    flex: 1 1 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 550px) {
+  ////slide
+  .main_slide {
+    margin-bottom: rem(80px);
+    .main_slide_wrap {
+      .slide_elem {
+        .container {
+          .slide_content {
+            h2 {
+              font-size: rem(25px);
+              .text_item {
+                font-size: rem(20px);
+              }
+
+            }
+            .slide_reliability {
+              padding-left: 0;
+              p {
+                text-align: center;
+                font-size: rem(20px);
+                display: block;
+                margin-bottom: rem(30px);
+                &::before {
+                  height: rem(5px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   //advantages
   .advantages {
+    .main_title {
+      margin-bottom: rem(200px);
+    }
     .advantages_wrap {
       .advantages_elem {
         margin-bottom: rem(180px);
@@ -1039,7 +1593,7 @@
           padding: rem(50px) rem(20px) 0;
           .advantages_circle {
             top: -50%;
-            left: calc(50% - 110px);
+            left: calc(50% - 90px);
           }
         }
       }
@@ -1066,22 +1620,38 @@
       }
     }
   }
+  //partners start elem
+  .partners_content {
+    .programs_container {
+      .partners_start_elem {
+        margin: 0 rem(5px) rem(20px);
+        padding: rem(5px);
+        .start_elem-gradient {
+          padding: rem(20px) rem(15px);
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
   //reliability
   .reliability {
     .reliability_content {
+      .reliability_img {
+        bottom: -8%;
+      }
       .reliability_elem {
         .reliability_head {
-          padding: rem(20px) 0;
+          height: 100px;
           p {
             font-size: rem(25px);
           }
         }
 
         .reliability_footer {
-          padding: rem(30px) rem(40px) rem(20px);
+          padding: rem(20px);
         }
 
       }
@@ -1099,7 +1669,7 @@
   .main_calculator_wrap {
     .calculator_results {
       p {
-        font-size: rem(18px);
+        font-size: rem(14px);
         margin-bottom: rem(15px);
         span {
           font-size: rem(20px);
@@ -1111,14 +1681,13 @@
         li {
           font-size: rem(15px);
           &:first-child {
-            font: 400 rem(16px) $lato;
+            font: 400 rem(14px) $lato;
           }
         }
       }
     }
   }
   .calculator_wrap {
-    text-align: center;
     .calculator_right {
       .right_content {
         p {
@@ -1153,6 +1722,20 @@
       }
     }
   }
+  .contacts_wrap {
+    padding: rem(80px) rem(5px);
+    .contacts_info {
+      .contacts {
+        a {
+          font-size: rem(18px);
+        }
+      }
+      .contacts_qr {
+        max-width: rem(300px);
+        height: rem(300px);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 361px) {
@@ -1180,6 +1763,59 @@
               }
             }
           }
+          .room_tabs {
+            .tabs_content {
+              .personal_settings {
+                .personal_form {
+                  .personal_wrap {
+                    p {
+                      font-size: rem(15px);
+                    }
+                    .personal_form-left {
+                      .notReceive_form {
+                        input {
+                          width: rem(12px);
+                          height: rem(12px);
+                        }
+
+                      }
+                    }
+                  }
+                  .security_form {
+                    p {
+                      font-size: rem(15px);
+                    }
+                    .security_left-form {
+                      .security_form-session {
+                        .session_elem {
+                          input {
+                            width: rem(12px);
+                            height: rem(12px);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main_calculator_wrap {
+    .main_calculator {
+      .calculator_form {
+        .calculator_form-elem {
+          p {
+            font-size: rem(12px);
+          }
+          .right_form {
+            .calculator-inp {
+              max-width: rem(150px);
+            }
+          }
         }
       }
     }
@@ -1198,7 +1834,64 @@
           .contacts {
             a {
               font-size: rem(16px);
+              margin-bottom: rem(15px);
+              i {
+                margin-right: rem(5px);
+              }
             }
+          }
+        }
+      }
+    }
+  }
+  //news
+  .news {
+    .news_container {
+      .new_elem {
+        header {
+          padding: rem(40px) 0;
+          h3 {
+            font-size: rem(20px);
+          }
+        }
+      }
+    }
+  }
+  //deposit
+  .deposit {
+    .deposit_wrap {
+      .deposit_card {
+        max-width: rem(250px);
+        .card_head {
+          height: rem(250px);
+          p {
+            font-size: rem(23px);
+          }
+          h3 {
+            font-size: rem(25px);
+          }
+        }
+        .card_content {
+          padding-top: rem(200px);
+        }
+      }
+    }
+  }
+  .partners_leader {
+    .fifty_leader {
+      .forty_leader-img {
+        top: 70%;
+      }
+    }
+  }
+  .contacts_wrap {
+    .contacts_info {
+      .contacts {
+        a {
+          font-size: rem(16px);
+          margin-bottom: rem(20px);
+          i {
+            margin-right: rem(5px);
           }
         }
       }

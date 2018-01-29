@@ -1,12 +1,21 @@
 .main_slide {
   width: 100%;
   position: relative;
+  //height: rem(900px);
+  height: 100vh;
+  margin-bottom: rem(200px);
   .main_slide_wrap {
     position: relative;
     width: 100%;
+    height: 100%;
     .slide_elem {
-      position: relative;
+      position: absolute;
       width: 100%;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      transform: scale(0.1);
+      transition: .3s;
       &::before {
         @include before_fig(100%, 100%, #1c1c1c);
         opacity: 0.55;
@@ -25,15 +34,26 @@
         }
       }
       .container {
+        padding: 0 rem(15px);
+        height: 100vh;
         .slide_content {
           width: 100%;
+          height: 100%;
           position: relative;
           z-index: 3;
-          padding: rem(250px) 0 rem(150px);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          //padding: rem(250px) 0 rem(150px);
           h2 {
             text-transform: uppercase;
             font: 700 rem(69px)/1.4 $proxima;
             color: #ffffff;
+            position: relative;
+            z-index: 4;
+            top: -30px;
+            transition: .4s .3s;
+            opacity: 0;
             .text_item {
               font-size: rem(61px);
             }
@@ -49,10 +69,39 @@
               color: #ffffff;
               font: 700 rem(30px)/1.8 $lato;
               text-transform: uppercase;
+              top: rem(-30px);
+              opacity: 0;
+              &:first-child {
+                transition: .4s .6s;
+              }
+              &:nth-child(2) {
+                transition: .4s .7s;
+              }
+              &:nth-child(3) {
+                transition: .4s .8s;
+              }
               &::before {
                 @include before_fig(rem(70px), rem(10px), $yellow-color);
                 left: -10%;
                 top: 35%;
+              }
+            }
+          }
+        }
+      }
+      &.active {
+        opacity: 1;
+        transform: scale(1);
+        .container {
+          .slide_content {
+            h2 {
+              top: 0;
+              opacity: 1;
+            }
+            .slide_reliability {
+              p {
+                opacity: 1;
+                top: 0;
               }
             }
           }

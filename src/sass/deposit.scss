@@ -6,11 +6,12 @@
     width: 100%;
     padding: rem(340px) rem(10px) rem(140px);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     .deposit_card {
       max-width: rem(355px);
       width: 100%;
+      flex: 1 1 18%;
       margin-bottom: rem(250px);
       .card_head {
         width: 100%;
@@ -62,14 +63,19 @@
     }
   }
   .increase_content {
-    position: relative;
-    display: flex;
-    padding: rem(50px) rem(50px) 0;
+    display: flex !important;
     justify-content: space-between;
+    position: relative;
+    padding: rem(50px) rem(40px);
+    margin: auto;
     .increase_elem {
-
+      margin: 0 rem(25px);
+      width: 16%;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       h4 {
-        text-align: center;
         color: #1c1c1c;
         text-transform: uppercase;
         font: 400 rem(22px)/3.4 "Proxima Nova - Extrabld";
@@ -79,7 +85,6 @@
         color: #1c1c1c;
         font: 400 rem(20px) $proxima;
         letter-spacing: rem(0.4px);
-        text-align: center;
       }
     }
   }

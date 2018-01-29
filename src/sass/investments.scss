@@ -53,9 +53,10 @@
   .investors_img {
     max-width: rem(681px);
     width: 39%;
-    height: auto;
+    height:auto;
     position: absolute;
     right: rem(130px);
+    z-index: 1;
     img {
       width: 100%;
       height: 100%;
@@ -69,7 +70,6 @@
       padding-left: rem(15px);
       background-color: #fff;
       opacity: 0.9;
-      text-align: center;
       .investors_text {
         color: #1c1c1c;
         font: 300 rem(20px)/1.7 $lato;

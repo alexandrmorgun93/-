@@ -16,6 +16,10 @@
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
+                .deposit_card{
+                  flex: 1 1 18%;
+                  margin: 0 rem(5px) rem(150px) rem(5px);
+                }
               }
               .deposit_contribution {
                 margin-top: rem(70px);
